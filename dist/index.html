@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+  
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+
+    <title>Шаблон проекта быстрого старта</title>
+    <meta name="description" content="Шаблон проекта быстрого старта"/>
+    <meta name="keywords" content="слова, ключевые" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="imagetoolbar" content="no" />
+    <meta name="msthemecompatible" content="no" />
+    <meta name="cleartype" content="on" />
+    <meta name="HandheldFriendly" content="True" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+
+    <meta name="google" value="notranslate" />
+
+    
+
+
+  <link sizes="57x57"   href="assets/images/i/apple-icon-57x57.png"   rel="apple-touch-icon" />
+  <link sizes="60x60"   href="assets/images/i/apple-icon-60x60.png"   rel="apple-touch-icon" />
+  <link sizes="72x72"   href="assets/images/i/apple-icon-72x72.png"   rel="apple-touch-icon" />
+  <link sizes="76x76"   href="assets/images/i/apple-icon-76x76.png"   rel="apple-touch-icon" />
+  <link sizes="114x114" href="assets/images/i/apple-icon-114x114.png" rel="apple-touch-icon" />
+  <link sizes="120x120" href="assets/images/i/apple-icon-120x120.png" rel="apple-touch-icon" />
+  <link sizes="144x144" href="assets/images/i/apple-icon-144x144.png" rel="apple-touch-icon" />
+  <link sizes="152x152" href="assets/images/i/apple-icon-152x152.png" rel="apple-touch-icon" />
+  <link sizes="180x180" href="assets/images/i/apple-icon-180x180.png" rel="apple-touch-icon" />
+  <link href="assets/images/i/apple-icon-152x152.png" rel="apple-touch-icon" />
+
+  <link sizes="192x192" href="assets/images/i/favicon-192x192.png" rel="icon" type="image/png" />
+  <link sizes="160x160" href="assets/images/i/favicon-160x160.png" rel="icon" type="image/png" />
+  <link sizes="96x96"   href="assets/images/i/favicon-96x96.png"   rel="icon" type="image/png" />
+  <link sizes="32x32"   href="assets/images/i/favicon-32x32.png"   rel="icon" type="image/png" />
+  <link sizes="16x16"   href="assets/images/i/favicon-16x16.png"   rel="icon" type="image/png" />
+
+  <link rel="shortcut icon" href="assets/images/i/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/images/i/favicon.ico" type="image/x-icon" />
+
+  <meta name="msapplication-square70x70logo" content="assets/images/i/smalltile.png" />
+  <meta name="msapplication-square150x150logo" content="assets/images/i/mediumtile.png" />
+  <meta name="msapplication-wide310x150logo" content="assets/images/i/widetile.png" />
+  <meta name="msapplication-square310x310logo" content="assets/images/i/largetile.png" />
+
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="application-name" content="" />
+  <meta name="msapplication-tooltip" content="" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-starturl" content="" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="msapplication-TileImage" content="assets/images/i//ms-icon-144x144.png" />
+
+      <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content=""/>
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="" />
+  <meta property="twitter:description" content="" />
+  <meta property="twitter:image" content="" />
+  <meta property="twitter:url" content="" />
+  <meta property="twitter:site" content="@username" />
+  <meta property="twitter:creator" content="@username" />
+
+  <meta itemprop="name" content=""/>
+  <meta itemprop="description" content=""/>
+  <meta itemprop="image" content="" />
+
+  <link rel="image_src" href="" />
+
+
+  
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+
+    <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
+  
+  </head>
+  <body>
+    <main>
+      
+<style>
+  .progress-page {
+  	font-size: 14px;
+  }
+
+  .progress-page a {
+  	color: #21aa00;
+  }
+
+  .progress-page a:hover {
+  	color: #000000;
+  }
+
+  .progress-page .navigation {
+  	display: block;
+  }
+
+  .progress-page .navigation__header {
+  	margin-bottom: 8px;
+  }
+
+  .progress-page .navigation__item {
+  	margin-bottom: 4px;
+  }
+
+  .progress-page .navigation-name {
+  	font-weight: 500;
+  }
+
+  .progress-page ul, .progress-page li {
+  	margin-left: 0;
+  }
+
+  .progress-page ul li {
+  	list-style: none;
+  	position: relative;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  }
+
+  .progress-page ul ul {
+  	display: block;
+  	margin: 8px 0 16px 24px;
+  	padding: 0;
+  }
+
+  .progress-page ul ul li .progress-design {
+  	margin-left: -25px;
+  }
+
+  .progress-page ul ul ul li .progress-design {
+  	margin-left: -45px;
+  }
+
+  .progress-page .progress {
+  	background-color: #fff;
+  	flex-basis: 300px;
+  	line-height: 16px;
+  }
+
+  .progress-page .progress .url__info {
+  	margin: -2px 0 0 0;
+  }
+
+  .progress-page .progress .url__file {
+  	color: #b6b6b6;
+  	font-size: 11px;
+  	font-style: italic;
+  	display: inline-block;
+  	line-height: 1;
+  }
+
+  .progress-page .progress progress {
+  	width: 200px;
+  }
+
+  .progress-page .progress progress,
+      .progress-page .progress .progress_value {
+  	display: inline-block;
+  }
+
+  .progress-page .progress_value {
+  	margin-left: 8px;
+  }
+
+  .progress-page .progress-time {
+  	color: #b6b6b6;
+  	pointer-events: none;
+  	font-size: 12px;
+  }
+
+  .progress-page code,
+    .progress-page tt {
+  	padding: .2rem .4rem;
+  	font-size: 90%;
+  	color: #2f6f9f;
+  	background-color: #f7f7f9;
+  	border-radius: .25rem;
+  }
+
+  .progress-page p > abbr[title] {
+  	border-bottom: 1px dashed #ccc;
+  	text-decoration: none;
+  	cursor: help;
+  	font-style: italic;
+  }
+
+  .progress-page pre {
+  	background: #fff0be;
+  	font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
+  	padding: 15px 15px;
+  	font-size: 12px;
+  	line-height: 1.335;
+  	margin-top: 20px;
+  	overflow-x: auto;
+  	display: block;
+  }
+
+  .progress-page h2 {
+  	margin-top: 15px;
+  	margin-bottom: 10px;
+  }
+
+  .progress-page .foldable__control {
+  	display: inline-block;
+  }
+
+  .progress-page .foldable__control .foldable__link {
+  	position: relative;
+  }
+
+  .progress-page .foldable__control .foldable__link:after {
+  	content: '';
+  	width: 0;
+  	height: 0;
+  	border: 5px solid;
+  	border-right: 4px dashed transparent;
+  	border-left: 4px dashed transparent;
+  	border-width: 5px 4px 0;
+  	margin: 0 -8px 0 0;
+  	position: relative;
+  	top: 14px;
+  	left: 4px;
+  	transition: 0s ease;
+  }
+
+  .progress-page .foldable__control.unfolded .foldable__link:after {
+  	top: -10px;
+  	border-width: 0 4px 5px;
+  }
+
+  .progress-page .pseudo {
+  	color: #21aa00;
+  	border-bottom: 1px dashed;
+  	transition: .3s ease;
+  	cursor: pointer;
+  }
+
+  .progress-page .pseudo:hover {
+  	color: #000;
+  	border-bottom-color: inherit;
+  }
+</style>
+<!-- begin .container -->
+<div class="container progress-page">
+  <section class="sitemap">
+   <ul class="navigation">
+      <li class="navigation__header">
+         <div class="progress navigation-name">Карта сайта</div>
+         <div class="progress navigation-name">Дизайн</div>
+         <div class="progress navigation-name">Вёрстка</div>
+         <div class="progress navigation-name">Время</div>
+      </li>
+      <li class="navigation__item">
+         <div class="progress progress-link">
+            <div class="url">
+               <div class="url__link">
+                  <a href="index.html">Главная страница</a>
+               </div><!-- /.url__link -->
+               <div class="url__info">
+                  <span class="url__file">pages/index.html</span>
+               </div>
+               <!-- /.url__info -->
+            </div>
+            <!-- /.url -->
+         </div>
+         <!-- /.progress-link -->
+         <div class="progress progress-design">
+            <progress max="100" value="100"></progress>
+            <span class="progress_value">100%</span>
+         </div>
+         <!-- /.progress-design -->
+         <div class="progress progress-html">
+            <progress max="100" value="0"></progress>
+            <span class="progress_value">0%</span>
+         </div>
+         <!-- /.progress-html -->
+         <div class="progress progress-time">
+            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+         </div>
+         <!-- /.progress-time -->
+      </li>
+      <li class="navigation__item">
+         <div class="progress progress-link">
+            <div class="url">
+               <div class="url__link">
+                  <a href=".html">Восстановление пароля</a>
+               </div>
+               <!-- /.url__link -->
+               <div class="url__info">
+                  <span class="url__file">/.html</span>
+               </div>
+               <!-- /.url__info -->
+            </div>
+            <!-- /.url -->
+         </div>
+         <!-- /.progress-link -->
+         <div class="progress progress-design">
+            <progress max="100" value="100"></progress>
+            <span class="progress_value">100%</span>
+         </div>
+         <!-- /.progress-design -->
+         <div class="progress progress-html">
+            <progress max="100" value="0"></progress>
+            <span class="progress_value">0%</span>
+         </div>
+         <!-- /.progress-html -->
+         <div class="progress progress-time">
+            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+         </div>
+         <!-- /.progress-time -->
+      </li>
+      <li class="navigation__item">
+         <div class="progress progress-link">
+            <div class="url">
+               <div class="url__link">
+                  <a href=".html">Вход / регистрация</a>
+               </div>
+               <!-- /.url__link -->
+               <div class="url__info">
+                  <span class="url__file">.html</span>
+               </div>
+               <!-- /.url__info -->
+            </div>
+            <!-- /.url -->
+         </div>
+         <!-- /.progress-link -->
+         <div class="progress progress-design">
+            <progress max="100" value="100"></progress>
+            <span class="progress_value">100%</span>
+         </div>
+         <!-- /.progress-design -->
+         <div class="progress progress-html">
+            <progress max="100" value="0"></progress>
+            <span class="progress_value">0%</span>
+         </div>
+         <!-- /.progress-html -->
+         <div class="progress progress-time">
+            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+         </div>
+         <!-- /.progress-time -->
+      </li>
+      <li>
+        <li class="navigation__header">
+           <div class="progress navigation-name">Личный кабинет</div>
+        </li>
+        <ul>
+           <li class="navigation__item">
+             <div class="progress progress-link">
+                <div class="url">
+                   <div class="url__link">
+                      <a href="desktop/lesson.html">ЛК, стартовая страница</a>
+                   </div><!-- /.url__link -->
+                   <div class="url__info">
+                      <span class="url__file">desktop/lesson.html</span>
+                   </div><!-- /.url__info -->
+                </div><!-- /.url -->
+             </div><!-- /.progress-link -->
+             <div class="progress progress-design">
+                <progress max="100" value="100"></progress>
+                <span class="progress_value">100%</span>
+             </div><!-- /.progress-design -->
+             <div class="progress progress-html">
+                <progress max="100" value="0"></progress>
+                <span class="progress_value">0%</span>
+             </div><!-- /.progress-html -->
+             <div class="progress progress-time">
+                &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+             </div><!-- /.progress-time -->
+          </li>
+           <li class="navigation__item">
+              <div class="progress progress-link">
+                 <div class="url">
+                    <div class="url__link">
+                       <a href="desktop/lesson.html">ЛК, вывод средств</a>
+                    </div><!-- /.url__link -->
+                    <div class="url__info">
+                       <span class="url__file">desktop/lesson.html</span>
+                    </div><!-- /.url__info -->
+                 </div><!-- /.url -->
+              </div><!-- /.progress-link -->
+              <div class="progress progress-design">
+                 <progress max="100" value="100"></progress>
+                 <span class="progress_value">100%</span>
+              </div><!-- /.progress-design -->
+              <div class="progress progress-html">
+                 <progress max="100" value="0"></progress>
+                 <span class="progress_value">0%</span>
+              </div><!-- /.progress-html -->
+              <div class="progress progress-time">
+                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+              </div><!-- /.progress-time -->
+           </li>
+           <li class="navigation__item">
+              <div class="progress progress-link">
+                 <div class="url">
+                    <div class="url__link">
+                       <a href="desktop/lesson.html">ЛК, друзья</a>
+                    </div><!-- /.url__link -->
+                    <div class="url__info">
+                       <span class="url__file">desktop/lesson.html</span>
+                    </div><!-- /.url__info -->
+                 </div><!-- /.url -->
+              </div><!-- /.progress-link -->
+              <div class="progress progress-design">
+                 <progress max="100" value="100"></progress>
+                 <span class="progress_value">100%</span>
+              </div><!-- /.progress-design -->
+              <div class="progress progress-html">
+                 <progress max="100" value="0"></progress>
+                 <span class="progress_value">0%</span>
+              </div><!-- /.progress-html -->
+              <div class="progress progress-time">
+                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+              </div><!-- /.progress-time -->
+           </li>
+           <li class="navigation__item">
+              <div class="progress progress-link">
+                 <div class="url">
+                    <div class="url__link">
+                       <a href="desktop/lesson.html">ЛК, история выплат</a>
+                    </div><!-- /.url__link -->
+                    <div class="url__info">
+                       <span class="url__file">desktop/lesson.html</span>
+                    </div><!-- /.url__info -->
+                 </div><!-- /.url -->
+              </div><!-- /.progress-link -->
+              <div class="progress progress-design">
+                 <progress max="100" value="100"></progress>
+                 <span class="progress_value">100%</span>
+              </div><!-- /.progress-design -->
+              <div class="progress progress-html">
+                 <progress max="100" value="0"></progress>
+                 <span class="progress_value">0%</span>
+              </div><!-- /.progress-html -->
+              <div class="progress progress-time">
+                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+              </div><!-- /.progress-time -->
+           </li>
+           <li class="navigation__item">
+              <div class="progress progress-link">
+                 <div class="url">
+                    <div class="url__link">
+                       <a href="desktop/lesson.html">ЛК, настройки</a>
+                    </div><!-- /.url__link -->
+                    <div class="url__info">
+                       <span class="url__file">desktop/lesson.html</span>
+                    </div><!-- /.url__info -->
+                 </div><!-- /.url -->
+              </div><!-- /.progress-link -->
+              <div class="progress progress-design">
+                 <progress max="100" value="100"></progress>
+                 <span class="progress_value">100%</span>
+              </div><!-- /.progress-design -->
+              <div class="progress progress-html">
+                 <progress max="100" value="0"></progress>
+                 <span class="progress_value">0%</span>
+              </div><!-- /.progress-html -->
+              <div class="progress progress-time">
+                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+              </div><!-- /.progress-time -->
+           </li>
+           <li class="navigation__item">
+              <div class="progress progress-link">
+                 <div class="url">
+                    <div class="url__link">
+                       <a href="desktop/lesson.html">ЛК, кабинет финансиста</a>
+                    </div><!-- /.url__link -->
+                    <div class="url__info">
+                       <span class="url__file">desktop/lesson.html</span>
+                    </div><!-- /.url__info -->
+                 </div><!-- /.url -->
+              </div><!-- /.progress-link -->
+              <div class="progress progress-design">
+                 <progress max="100" value="100"></progress>
+                 <span class="progress_value">100%</span>
+              </div><!-- /.progress-design -->
+              <div class="progress progress-html">
+                 <progress max="100" value="0"></progress>
+                 <span class="progress_value">0%</span>
+              </div><!-- /.progress-html -->
+              <div class="progress progress-time">
+                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+              </div><!-- /.progress-time -->
+           </li>
+        </ul>
+      </li>
+
+      <li class="navigation__item">
+         <div class="progress progress-link">
+            <div class="url">
+               <div class="url__link">
+                  <a href="mail/index.html">Шаблон письма</a>
+               </div>
+               <!-- /.url__link -->
+               <div class="url__info">
+                  <span class="url__file">mail/index.html</span>
+               </div>
+               <!-- /.url__info -->
+            </div>
+            <!-- /.url -->
+         </div>
+         <!-- /.progress-link -->
+         <div class="progress progress-design">
+            <progress max="100" value="100"></progress>
+            <span class="progress_value">100%</span>
+         </div>
+         <!-- /.progress-design -->
+         <div class="progress progress-html">
+            <progress max="100" value="0"></progress>
+            <span class="progress_value">0%</span>
+         </div>
+         <!-- /.progress-html -->
+         <div class="progress progress-time">
+            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+         </div>
+         <!-- /.progress-time -->
+      </li>
+      <li class="navigation__item">
+         <div class="progress progress-link">
+            <div class="url">
+               <div class="url__link">
+                  <a href="ui.html">UI: Контролы и компоненты</a>
+               </div>
+               <!-- /.url__link -->
+               <div class="url__info">
+                  <span class="url__file">pages/ui.html</span>
+               </div>
+               <!-- /.url__info -->
+            </div>
+            <!-- /.url -->
+         </div>
+         <!-- /.progress-link -->
+         <div class="progress progress-design">
+            <progress max="100" value="100"></progress>
+            <span class="progress_value">100%</span>
+         </div>
+         <!-- /.progress-design -->
+         <div class="progress progress-html">
+            <progress max="100" value="0"></progress>
+            <span class="progress_value">0%</span>
+         </div>
+         <!-- /.progress-html -->
+         <div class="progress progress-time">
+            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+         </div>
+         <!-- /.progress-time -->
+      </li>
+   </ul>
+  </section>
+</div>
+<!-- end .container -->
+
+    </main>
+    <footer class="footer">
+
+  <div class="company">
+    <div class="container">
+      <div class="company_wrapper">
+
+        <div class="footer_everything">
+
+          <div class="everything">
+
+            <h4 class="everything-header"><a href="">Инструменты</a></h4>
+
+            <ul class="everything-menu">
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Поисковое продвижение</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Контекстная реклама</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Контент-маркетинг</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Управление репутацией</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Наполнение сайтов</a></li>
+            </ul>
+
+            <h4 class="everything-header"><a href="">Технологии</a></h4>
+
+            <ul class="everything-menu">
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">SeoPult +</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">SeoPult Max</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Естественные ссылки</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Продвижение статьями</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Трафиковое продвижение</a></li>
+            </ul>
+
+          </div><!-- /.everything -->
+
+          <div class="everything">
+            <h4 class="everything-header"><a href="">Обучение</a></h4>
+
+            <ul class="everything-menu">
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Бесплатные курсы и семинары</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Обучающее видео и вебинары</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Информационная рассылка</a></li>
+            </ul>
+
+            <h4 class="everything-header"><a href="">Справка</a></h4>
+
+            <ul class="everything-menu">
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Инструкции</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Вопрос-ответ</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">База терминов</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Обратиться в поддержку</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Анализатор апдейтов</a></li>
+            </ul>
+          </div><!-- /.everything -->
+
+          <div class="everything">
+
+            <h4 class="everything-header"><a href="">О системе</a></h4>
+
+            <ul class="everything-menu">
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Карьера у нас</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Сотрудничество</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Реферальная программа</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Договоры и условия</a></li>
+              <li class="everything-menu_item"><a href="" class="everything-menu_link">Логотип</a></li>
+            </ul>
+
+            <h4 class="everything-header active" title="Вы сейчас здесь, везёт вам, а"><a href=""><span class="star">★&nbsp;</span>Блог</a></h4>
+
+            <h4 class="everything-header"><a href="">Новости</a></h4>
+
+          </div><!-- /.everything -->
+
+        </div><!-- /.footer_everything -->
+        <div class="footer_public">
+          <div class="social-box">
+            <ul class="social">
+              <li class="social_item"><a href="https://www.youtube.com/user/SeoPultRU" class="social_link social_link--youtube" target="_blank" title="YouTube откроется в новом окне"><span>YouTube</span></a></li>
+              <li class="social_item"><a href="https://vk.com/seopultru" class="social_link social_link--vk" target="_blank" title="VK.com откроется в новом окне"><span>VK</span></a></li>
+              <li class="social_item"><a href="https://twitter.com/SeoPultRU" class="social_link social_link--twitter" target="_blank" title="Twitter откроется в новом окне"><span>Twitter</span></a></li>
+              <li class="social_item"><a href="https://www.facebook.com/seopult" class="social_link social_link--facebook" target="_blank" title="FaceBook откроется в новом окне"><span>FaceBook</span></a></li>
+              <li class="social_item"><a href="https://t.me/seopultru" class="social_link social_link--telegram" target="_blank" title="Telegram откроется в новом окне"><span>Telegram</span></a></li>
+
+              <li class="social_item"><a href="" class="social_link social_link--medium" target="_blank" title="Medium откроется в новом окне"><span>Medium</span></a></li>
+              <li class="social_item"><a href="" class="social_link social_link--instagram" target="_blank" title="Instagram откроется в новом окне"><span>Instagram</span></a></li>
+            </ul>
+          </div><!-- /.social-box -->
+        </div><!-- /.footer_public -->
+
+      </div><!-- /.company_wrapper -->
+    </div><!-- /.container -->
+  </div><!-- /.company -->
+
+  <div class="copyright">
+    <div class="container">
+      <div class="copyright_wrapper">
+        <div class="">&copy;&nbsp;Блог проекта SeoPult.ru, 2007–2018</div>
+        <div class="">Если копируете наши посты — поставьте, пожалуйста, ссылку.</div>
+      </div><!-- /.copyright_wrapper -->
+    </div><!-- /.container -->
+  </div><!-- /.copyright -->
+
+</footer>
+
+<script src="assets/scripts/jquery-3.3.1.min.js"></script>
+<script src="assets/scripts/scripts.js"></script>
+
+  </body>
+</html>
+
