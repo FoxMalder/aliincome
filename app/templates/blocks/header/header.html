@@ -15,8 +15,12 @@
 
       <!-- begin .header_nav -->
       <div class="header_nav">
-        <a href="javascript:void(0);" class="btn btn-outline">Войти</a>
-        <a href="javascript:void(0);" class="btn btn-red">Установить расширение</a>
+        {% if login %}
+          в ЛК показать выход-иконку
+        {% else %}
+          <a href="javascript:void(0);" class="btn btn-outline">Войти</a>
+          <a href="javascript:void(0);" class="btn btn-red">Установить расширение</a>
+        {% endif %}
       </div>
       <!-- end .header_nav -->
 
