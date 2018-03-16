@@ -2,8 +2,8 @@
 .idea
 .vscode
 Thumbs.db
+.publish
 
-dist
 zip
 
 psd
