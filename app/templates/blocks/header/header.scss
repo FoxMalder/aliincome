@@ -7,6 +7,7 @@
   width: 100%;
   left: 0;
   right: 0;
+  color: #fff;
 
   &_wrap {
     padding: 0;
@@ -16,4 +17,10 @@
     justify-content: space-between;
     height: $header-height;
   }
+}
+
+.logo-link {
+  border-bottom: 0;
+  padding: 0;
+  margin: 0;
 }
