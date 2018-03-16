@@ -52,24 +52,11 @@
   line-height: 30px;
   margin: 0 0 15px 0;
 
-  &.active {
-
-    a {
-      color: #ff9900;
-
-      span.star {
-        margin-left: -20px;
-      }
-    }
-  }
-
   a {
     color: rgb(192, 200, 204);
     border-bottom: 0;
 
-    &:hover {
-      color: #ff9900;
-    }
+    &:hover { color: $link-hover-color; }
   }
 }
 
@@ -81,19 +68,7 @@
   &_item {
     margin-bottom: 5px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &.active {
-
-      .everything-menu_link {
-        color: #ff9900;
-        //padding: 3px 8px;
-        border-radius: 2px;
-        //margin-left: -8px;
-      }
-    }
+    &:last-child { margin-bottom: 0; }
   }
 
   &_link {
@@ -104,9 +79,7 @@
     line-height: 14px;
     border-bottom: 0;
 
-    &:hover {
-      color: #ff9900;
-    }
+    &:hover { color: $link-hover-color; }
   }
 }
 
