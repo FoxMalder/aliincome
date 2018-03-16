@@ -36,10 +36,10 @@
   {% endblock %}
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% else %}{% endif %}>
+    {% include "blocks/header/header.html" %}
     <main>
       {% block content %}{% endblock %}
     </main>
     {% include "blocks/footer/footer.html" %}
   </body>
 </html>
-
