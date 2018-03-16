@@ -6,3 +6,10 @@ bodyclass:
 ---
 
 {% extends "layouts/layout.html" %}
+
+{% block content %}
+  {% include "blocks/main/headline/headline.html" %}
+  {% include "blocks/main/payout/payout.html" %}
+  {% include "blocks/main/faq/faq.html" %}
+  {% include "blocks/main/testimonials/testimonials.html" %}
+{% endblock %}
