@@ -1,0 +1,11 @@
+.base-block {
+  position: relative;
+
+  &_header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+}

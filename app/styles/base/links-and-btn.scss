@@ -50,6 +50,7 @@ a {
   position: relative;
   overflow: hidden;
 
+  // красная кнопка, что логично
   &-red {
     background-color: #e92c00;
 
@@ -77,6 +78,7 @@ a {
     }
   }
 
+  // контурная, прозрачная
   &-outline {
     background-color: transparent;
     border-color: #898e97;
@@ -105,20 +107,20 @@ a {
   }
 
   &-outline-light {
-    border-color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: #898e97;
+    color: #30363c;
 
     &:hover,
     &.hover {
-      background-color: rgb(255, 174, 0);
-      border-color: rgb(255, 174, 0);
+      border-color: #ff3b0e;
       color: #fff;
     }
 
     &:focus,
     &.focus {
-      background-color: rgb(206, 125, 0);
-      border-color: rgb(206, 125, 0);
-      color: #ffffff;
+      border-color: #545860;
+      color: #898e97;
     }
 
     &[disabled=disabled],
