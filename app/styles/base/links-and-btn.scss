@@ -29,3 +29,118 @@ a {
     color: $link-active-color;
   }
 }
+
+// Кнопки
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 13px 26px 12px 26px;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s ease;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+
+  &-red {
+    background-color: #e92c00;
+
+    &:hover,
+    &.hover {
+      background-color: #ff3b0e;
+      border-color: #ff3b0e;
+      color: #fff;
+    }
+
+    &:focus,
+    &.focus {
+      background-color: #da2900;
+      border-color: #da2900;
+      color: #ed9480;
+    }
+
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(255, 255, 255);
+      background-color: rgb(214, 217, 220);
+      border-color: rgb(214, 217, 220);
+    }
+  }
+
+  &-outline {
+    background-color: transparent;
+    border-color: #898e97;
+    color: #fff;
+
+    &:hover,
+    &.hover {
+      border-color: #ff3b0e;
+      color: #fff;
+    }
+
+    &:focus,
+    &.focus {
+      border-color: #545860;
+      color: #898e97;
+    }
+
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(255, 255, 255);
+      background-color: rgb(214, 217, 220);
+      border-color: rgb(214, 217, 220);
+    }
+  }
+
+  &-outline-light {
+    border-color: rgb(255, 255, 255);
+
+    &:hover,
+    &.hover {
+      background-color: rgb(255, 174, 0);
+      border-color: rgb(255, 174, 0);
+      color: #fff;
+    }
+
+    &:focus,
+    &.focus {
+      background-color: rgb(206, 125, 0);
+      border-color: rgb(206, 125, 0);
+      color: #ffffff;
+    }
+
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(255, 255, 255);
+      background-color: rgb(214, 217, 220);
+      border-color: rgb(214, 217, 220);
+    }
+  }
+
+  &-mini {
+    padding: 9px 19px 9px 19px;
+  }
+
+  &-large {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  &-full {
+    width: 100%;
+  }
+}
