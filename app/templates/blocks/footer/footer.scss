@@ -17,6 +17,16 @@
       align-content: center;
       height: 70px;
     }
+
+    a {
+      color: rgb(115, 120, 127);
+      border-color: rgba(115, 120, 127, .35);
+
+      &:hover {
+        color: $link-hover-color;
+        border-color: $link-hover-color;
+      }
+    }
   }
 
   &_everything {
