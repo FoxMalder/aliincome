@@ -59,6 +59,9 @@
 
   &_item {
     flex-basis: 33%;
+    margin-right: 30px;
+
+    &:last-child { margin-right: 0; }
   }
 
   &_box {
@@ -90,6 +93,11 @@
       overflow: hidden;
       border-radius: 50%;
       background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -100,5 +108,27 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+  }
+}
+
+.step_ico {
+  position: relative;
+  display: inline-block;
+  transition: all .3s ease;
+  text-indent: -9999px;
+
+  &--puzzle {
+    @include size(68px, 67px);
+    background-image: inline('puzzle.png');
+  }
+
+  &--cart {
+    @include size(67px, 53px);
+    background-image: inline('cart.png');
+  }
+
+  &--make-money {
+    @include size(68px, 44px);
+    background-image: inline('make-money.png');
   }
 }
