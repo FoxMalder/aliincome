@@ -25,4 +25,38 @@
   &_box {
     padding: 20px;
   }
+
+  &_info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+
+  &_name {
+    color: #30363c;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  &_photo {
+    margin-right: 20px;
+
+    &-box {
+      width: 60px;
+      height: 60px;
+      background-color: #2f383e;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  &_content {
+    color: #30363c;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+  }
 }

@@ -1,0 +1,10 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  transition: all .3s ease;
+
+  &-star {
+    @include size(17px, 16px);
+    background-image: svg-load('star.svg', fill=#e92c00);
+  }
+}
