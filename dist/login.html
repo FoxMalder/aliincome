@@ -88,7 +88,7 @@
 
   
 
-    <link href="assets/styles/style.css?v=5692d529f07c3b1157ed70c66e8c7309" rel="stylesheet" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -104,8 +104,8 @@
     </div>
     <!-- end .user-page-nav_logo -->
     <ul class="user-page-menu">
-      <li class="user-page-menu_item active"><a href="#" class="user-page-menu_link">Вход</a></li>
-      <li class="user-page-menu_item "><a href="#" class="user-page-menu_link">Регистрация</a></li>
+      <li class="user-page-menu_item"><a href="#" class="user-page-menu_link">Вход</a></li>
+      <li class="user-page-menu_item active"><a href="#" class="user-page-menu_link">Регистрация</a></li>
     </ul>
   </div>
 </div>
@@ -113,67 +113,71 @@
 
   <!-- begin .user-page_content -->
 <div class="user-page_content">
-  <!-- begin .c -->
-  <div class="c">
+  <!-- begin .page_content_form -->
+  <div class="page_content_form">
     <form action="" class="form form-user">
+      <div class="form-group">
+        <label for="" class="form-control-label hide" hide>Email</label>
+        <input type="text" id="" class="form-control" placeholder="Email" autofocus="">
+      </div><!-- /.form-group -->
 
-        <div class="form-group">
-          <label for="aemail" class="form-control-label hide">Ваше имя</label>
-          <input type="text" id="aemail" class="form-control" placeholder="Представьтесь, пожалуйста?" autofocus="">
-        </div><!-- /.form-group -->
+      <div class="form-group">
+        <label for="" class="form-control-label hide">Имя</label>
+        <input type="text" id="" class="form-control" placeholder="Имя" autofocus="">
+      </div><!-- /.form-group -->
 
-        <div class="form-group">
-          <label for="aemail" class="form-control-label hide">Рабочий email</label>
-          <input type="text" id="aemail" class="form-control" placeholder="Адрес элпочты" autofocus="">
-        </div><!-- /.form-group -->
+      <div class="form-group">
+        <label for="" class="form-control-label hide">Придумайте пароль</label>
+        <input type="password" id="" class="form-control" placeholder="Пароль (6 и более символов)">
+      </div><!-- /.form-group -->
 
-        <div class="form-group status-right">
-          <label for="apass" class="form-control-label hide">Придумайте пароль</label>
-          <input type="password" id="apass" class="form-control" placeholder="Пароль">
-          <span class="form-control-feedback"><i class="icon icon-eyes"></i></span>
-        </div><!-- /.form-group -->
+      <div class="form-group">
+        <label for="" class="form-control-label hide">Подтверждение пароля</label>
+        <input type="password" id="" class="form-control" placeholder="Пароль ещё раз">
+      </div><!-- /.form-group -->
 
-        <div class="form-group">
-          <div class="form-check">
-            <input type="checkbox" name="reg" id="iamok">
-            <label for="iamok">
-              <span class="form-check-control">С <a href="/">Офертами</a> и <a href="/">Политикой конфиденциальности</a> ознакомлен и согласен</span>
-            </label>
-          </div><!-- /.form-check -->
-        </div><!-- /.form-group -->
+      <div class="form-group">
+        <input type="password" id="" class="form-control" placeholder="Код">
+      </div><!-- /.form-group -->
 
-        <div class="form-actions full">
-          <button class="btn btn-red" id="submit">Зарегистрироваться</button>
-        </div><!-- /.form-actions -->
+      <div class="form-actions full">
+        <button class="btn btn-red" id="submit">Зарегистрироваться</button>
+      </div><!-- /.form-actions -->
 
-        <div class="form-social">
-          <p class="form-social-text">Зарегистрироаться, используя аккаунт</p>
-          <div class="social-auth">
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-yandex">
-                <div class="social-auth-ico"><span><i class="icon icon-yandex"></i></span></div>
-              </div><!-- /.social-auth__box -->
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-google">
-                <div class="social-auth-ico"><span><i class="icon icon-google"></i></span></div>
-              </div><!-- /.social-auth__box -->
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-vk">
-                <div class="social-auth-ico"><span><i class="icon icon-vk"></i></span></div>
-              </div><!-- /.social-auth__box -->
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-fb">
-                <div class="social-auth-ico"><span><i class="icon icon-fb"></i></span></div>
-              </div><!-- /.social-auth__box -->
-            </div><!-- /.social-auth__item -->
-          </div><!-- /.social-auth -->
-        </div><!-- /.form-social -->
-      </form>
+      <div class="form-group">
+        <p><a href="">Договор и условия</a></p>
+      </div><!-- /.form-group -->
+
+
+
+      <div class="form-social">
+        <p class="form-social-text">Зарегистрироаться, используя аккаунт</p>
+        <div class="social-auth">
+          <div class="social-auth__item">
+            <div class="social-auth__box social-auth-yandex">
+              <div class="social-auth-ico"><span><i class="icon icon-yandex"></i></span></div>
+            </div><!-- /.social-auth__box -->
+          </div><!-- /.social-auth__item -->
+          <div class="social-auth__item">
+            <div class="social-auth__box social-auth-google">
+              <div class="social-auth-ico"><span><i class="icon icon-google"></i></span></div>
+            </div><!-- /.social-auth__box -->
+          </div><!-- /.social-auth__item -->
+          <div class="social-auth__item">
+            <div class="social-auth__box social-auth-vk">
+              <div class="social-auth-ico"><span><i class="icon icon-vk"></i></span></div>
+            </div><!-- /.social-auth__box -->
+          </div><!-- /.social-auth__item -->
+          <div class="social-auth__item">
+            <div class="social-auth__box social-auth-fb">
+              <div class="social-auth-ico"><span><i class="icon icon-fb"></i></span></div>
+            </div><!-- /.social-auth__box -->
+          </div><!-- /.social-auth__item -->
+        </div><!-- /.social-auth -->
+      </div><!-- /.form-social -->
+    </form>
   </div>
-  <!-- end .c -->
+  <!-- end .page_content_form -->
 </div>
 <!-- end .user-page_content -->
 
