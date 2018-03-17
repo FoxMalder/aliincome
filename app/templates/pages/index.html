@@ -9,16 +9,14 @@ bodyclass:
 
 {% block content %}
 <style>
+  .progress-page_wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #f8fcfd;
+    border-bottom: 1px solid #f8fcfd;
+  }
   .progress-page {
   	font-size: 14px;
-  }
-
-  .progress-page a {
-  	color: #21aa00;
-  }
-
-  .progress-page a:hover {
-  	color: #000000;
   }
 
   .progress-page .navigation {
@@ -172,313 +170,317 @@ bodyclass:
   	border-bottom-color: inherit;
   }
 </style>
-<!-- begin .container -->
-<div class="container progress-page">
-  <section class="sitemap">
-   <ul class="navigation">
-      <li class="navigation__header">
-         <div class="progress navigation-name">Карта сайта</div>
-         <div class="progress navigation-name">Дизайн</div>
-         <div class="progress navigation-name">Вёрстка</div>
-         <div class="progress navigation-name">Время</div>
-      </li>
-      <li class="navigation__item">
-         <div class="progress progress-link">
-            <div class="url">
-               <div class="url__link">
-                  <a href="main.html">Главная страница</a>
-               </div><!-- /.url__link -->
-               <div class="url__info">
-                  <span class="url__file">pages/main.html</span>
-               </div>
-               <!-- /.url__info -->
-            </div>
-            <!-- /.url -->
-         </div>
-         <!-- /.progress-link -->
-         <div class="progress progress-design">
-            <progress max="100" value="100"></progress>
-            <span class="progress_value">100%</span>
-         </div>
-         <!-- /.progress-design -->
-         <div class="progress progress-html">
-            <progress max="100" value="0"></progress>
-            <span class="progress_value">0%</span>
-         </div>
-         <!-- /.progress-html -->
-         <div class="progress progress-time">
-            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-         </div>
-         <!-- /.progress-time -->
-      </li>
-      <li class="navigation__item">
-         <div class="progress progress-link">
-            <div class="url">
-               <div class="url__link">
-                  <a href=".html">Восстановление пароля</a>
-               </div>
-               <!-- /.url__link -->
-               <div class="url__info">
-                  <span class="url__file">/.html</span>
-               </div>
-               <!-- /.url__info -->
-            </div>
-            <!-- /.url -->
-         </div>
-         <!-- /.progress-link -->
-         <div class="progress progress-design">
-            <progress max="100" value="100"></progress>
-            <span class="progress_value">100%</span>
-         </div>
-         <!-- /.progress-design -->
-         <div class="progress progress-html">
-            <progress max="100" value="0"></progress>
-            <span class="progress_value">0%</span>
-         </div>
-         <!-- /.progress-html -->
-         <div class="progress progress-time">
-            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-         </div>
-         <!-- /.progress-time -->
-      </li>
-      <li class="navigation__item">
-         <div class="progress progress-link">
-            <div class="url">
-               <div class="url__link">
-                  <a href=".html">Вход / регистрация</a>
-               </div>
-               <!-- /.url__link -->
-               <div class="url__info">
-                  <span class="url__file">.html</span>
-               </div>
-               <!-- /.url__info -->
-            </div>
-            <!-- /.url -->
-         </div>
-         <!-- /.progress-link -->
-         <div class="progress progress-design">
-            <progress max="100" value="100"></progress>
-            <span class="progress_value">100%</span>
-         </div>
-         <!-- /.progress-design -->
-         <div class="progress progress-html">
-            <progress max="100" value="0"></progress>
-            <span class="progress_value">0%</span>
-         </div>
-         <!-- /.progress-html -->
-         <div class="progress progress-time">
-            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-         </div>
-         <!-- /.progress-time -->
-      </li>
-      <li>
+<!-- begin .progress-page_wrap -->
+<div class="progress-page_wrap">
+  <!-- begin .container -->
+  <div class="container progress-page">
+    <section class="sitemap">
+     <ul class="navigation">
         <li class="navigation__header">
-           <div class="progress navigation-name">Личный кабинет</div>
+           <div class="progress navigation-name">Карта сайта</div>
+           <div class="progress navigation-name">Дизайн</div>
+           <div class="progress navigation-name">Вёрстка</div>
+           <div class="progress navigation-name">Время</div>
         </li>
-        <ul>
-           <li class="navigation__item">
-             <div class="progress progress-link">
-                <div class="url">
-                   <div class="url__link">
-                      <a href="desktop/lesson.html">ЛК, стартовая страница</a>
-                   </div><!-- /.url__link -->
-                   <div class="url__info">
-                      <span class="url__file">desktop/lesson.html</span>
-                   </div><!-- /.url__info -->
-                </div><!-- /.url -->
-             </div><!-- /.progress-link -->
-             <div class="progress progress-design">
-                <progress max="100" value="100"></progress>
-                <span class="progress_value">100%</span>
-             </div><!-- /.progress-design -->
-             <div class="progress progress-html">
-                <progress max="100" value="0"></progress>
-                <span class="progress_value">0%</span>
-             </div><!-- /.progress-html -->
-             <div class="progress progress-time">
-                &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-             </div><!-- /.progress-time -->
+        <li class="navigation__item">
+           <div class="progress progress-link">
+              <div class="url">
+                 <div class="url__link">
+                    <a href="main.html">Главная страница</a>
+                 </div><!-- /.url__link -->
+                 <div class="url__info">
+                    <span class="url__file">pages/main.html</span>
+                 </div>
+                 <!-- /.url__info -->
+              </div>
+              <!-- /.url -->
+           </div>
+           <!-- /.progress-link -->
+           <div class="progress progress-design">
+              <progress max="100" value="100"></progress>
+              <span class="progress_value">100%</span>
+           </div>
+           <!-- /.progress-design -->
+           <div class="progress progress-html">
+              <progress max="100" value="0"></progress>
+              <span class="progress_value">0%</span>
+           </div>
+           <!-- /.progress-html -->
+           <div class="progress progress-time">
+              &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+           </div>
+           <!-- /.progress-time -->
+        </li>
+        <li class="navigation__item">
+           <div class="progress progress-link">
+              <div class="url">
+                 <div class="url__link">
+                    <a href=".html">Восстановление пароля</a>
+                 </div>
+                 <!-- /.url__link -->
+                 <div class="url__info">
+                    <span class="url__file">/.html</span>
+                 </div>
+                 <!-- /.url__info -->
+              </div>
+              <!-- /.url -->
+           </div>
+           <!-- /.progress-link -->
+           <div class="progress progress-design">
+              <progress max="100" value="100"></progress>
+              <span class="progress_value">100%</span>
+           </div>
+           <!-- /.progress-design -->
+           <div class="progress progress-html">
+              <progress max="100" value="0"></progress>
+              <span class="progress_value">0%</span>
+           </div>
+           <!-- /.progress-html -->
+           <div class="progress progress-time">
+              &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+           </div>
+           <!-- /.progress-time -->
+        </li>
+        <li class="navigation__item">
+           <div class="progress progress-link">
+              <div class="url">
+                 <div class="url__link">
+                    <a href=".html">Вход / регистрация</a>
+                 </div>
+                 <!-- /.url__link -->
+                 <div class="url__info">
+                    <span class="url__file">.html</span>
+                 </div>
+                 <!-- /.url__info -->
+              </div>
+              <!-- /.url -->
+           </div>
+           <!-- /.progress-link -->
+           <div class="progress progress-design">
+              <progress max="100" value="100"></progress>
+              <span class="progress_value">100%</span>
+           </div>
+           <!-- /.progress-design -->
+           <div class="progress progress-html">
+              <progress max="100" value="0"></progress>
+              <span class="progress_value">0%</span>
+           </div>
+           <!-- /.progress-html -->
+           <div class="progress progress-time">
+              &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+           </div>
+           <!-- /.progress-time -->
+        </li>
+        <li>
+          <li class="navigation__header">
+             <div class="progress navigation-name">Личный кабинет</div>
           </li>
-           <li class="navigation__item">
-              <div class="progress progress-link">
-                 <div class="url">
-                    <div class="url__link">
-                       <a href="desktop/lesson.html">ЛК, вывод средств</a>
-                    </div><!-- /.url__link -->
-                    <div class="url__info">
-                       <span class="url__file">desktop/lesson.html</span>
-                    </div><!-- /.url__info -->
-                 </div><!-- /.url -->
-              </div><!-- /.progress-link -->
-              <div class="progress progress-design">
-                 <progress max="100" value="100"></progress>
-                 <span class="progress_value">100%</span>
-              </div><!-- /.progress-design -->
-              <div class="progress progress-html">
-                 <progress max="100" value="0"></progress>
-                 <span class="progress_value">0%</span>
-              </div><!-- /.progress-html -->
-              <div class="progress progress-time">
-                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-              </div><!-- /.progress-time -->
-           </li>
-           <li class="navigation__item">
-              <div class="progress progress-link">
-                 <div class="url">
-                    <div class="url__link">
-                       <a href="desktop/lesson.html">ЛК, друзья</a>
-                    </div><!-- /.url__link -->
-                    <div class="url__info">
-                       <span class="url__file">desktop/lesson.html</span>
-                    </div><!-- /.url__info -->
-                 </div><!-- /.url -->
-              </div><!-- /.progress-link -->
-              <div class="progress progress-design">
-                 <progress max="100" value="100"></progress>
-                 <span class="progress_value">100%</span>
-              </div><!-- /.progress-design -->
-              <div class="progress progress-html">
-                 <progress max="100" value="0"></progress>
-                 <span class="progress_value">0%</span>
-              </div><!-- /.progress-html -->
-              <div class="progress progress-time">
-                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-              </div><!-- /.progress-time -->
-           </li>
-           <li class="navigation__item">
-              <div class="progress progress-link">
-                 <div class="url">
-                    <div class="url__link">
-                       <a href="desktop/lesson.html">ЛК, история выплат</a>
-                    </div><!-- /.url__link -->
-                    <div class="url__info">
-                       <span class="url__file">desktop/lesson.html</span>
-                    </div><!-- /.url__info -->
-                 </div><!-- /.url -->
-              </div><!-- /.progress-link -->
-              <div class="progress progress-design">
-                 <progress max="100" value="100"></progress>
-                 <span class="progress_value">100%</span>
-              </div><!-- /.progress-design -->
-              <div class="progress progress-html">
-                 <progress max="100" value="0"></progress>
-                 <span class="progress_value">0%</span>
-              </div><!-- /.progress-html -->
-              <div class="progress progress-time">
-                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-              </div><!-- /.progress-time -->
-           </li>
-           <li class="navigation__item">
-              <div class="progress progress-link">
-                 <div class="url">
-                    <div class="url__link">
-                       <a href="desktop/lesson.html">ЛК, настройки</a>
-                    </div><!-- /.url__link -->
-                    <div class="url__info">
-                       <span class="url__file">desktop/lesson.html</span>
-                    </div><!-- /.url__info -->
-                 </div><!-- /.url -->
-              </div><!-- /.progress-link -->
-              <div class="progress progress-design">
-                 <progress max="100" value="100"></progress>
-                 <span class="progress_value">100%</span>
-              </div><!-- /.progress-design -->
-              <div class="progress progress-html">
-                 <progress max="100" value="0"></progress>
-                 <span class="progress_value">0%</span>
-              </div><!-- /.progress-html -->
-              <div class="progress progress-time">
-                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-              </div><!-- /.progress-time -->
-           </li>
-           <li class="navigation__item">
-              <div class="progress progress-link">
-                 <div class="url">
-                    <div class="url__link">
-                       <a href="desktop/lesson.html">ЛК, кабинет финансиста</a>
-                    </div><!-- /.url__link -->
-                    <div class="url__info">
-                       <span class="url__file">desktop/lesson.html</span>
-                    </div><!-- /.url__info -->
-                 </div><!-- /.url -->
-              </div><!-- /.progress-link -->
-              <div class="progress progress-design">
-                 <progress max="100" value="100"></progress>
-                 <span class="progress_value">100%</span>
-              </div><!-- /.progress-design -->
-              <div class="progress progress-html">
-                 <progress max="100" value="0"></progress>
-                 <span class="progress_value">0%</span>
-              </div><!-- /.progress-html -->
-              <div class="progress progress-time">
-                 &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-              </div><!-- /.progress-time -->
-           </li>
-        </ul>
-      </li>
+          <ul>
+             <li class="navigation__item">
+               <div class="progress progress-link">
+                  <div class="url">
+                     <div class="url__link">
+                        <a href="desktop/lesson.html">ЛК, стартовая страница</a>
+                     </div><!-- /.url__link -->
+                     <div class="url__info">
+                        <span class="url__file">desktop/lesson.html</span>
+                     </div><!-- /.url__info -->
+                  </div><!-- /.url -->
+               </div><!-- /.progress-link -->
+               <div class="progress progress-design">
+                  <progress max="100" value="100"></progress>
+                  <span class="progress_value">100%</span>
+               </div><!-- /.progress-design -->
+               <div class="progress progress-html">
+                  <progress max="100" value="0"></progress>
+                  <span class="progress_value">0%</span>
+               </div><!-- /.progress-html -->
+               <div class="progress progress-time">
+                  &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+               </div><!-- /.progress-time -->
+            </li>
+             <li class="navigation__item">
+                <div class="progress progress-link">
+                   <div class="url">
+                      <div class="url__link">
+                         <a href="desktop/lesson.html">ЛК, вывод средств</a>
+                      </div><!-- /.url__link -->
+                      <div class="url__info">
+                         <span class="url__file">desktop/lesson.html</span>
+                      </div><!-- /.url__info -->
+                   </div><!-- /.url -->
+                </div><!-- /.progress-link -->
+                <div class="progress progress-design">
+                   <progress max="100" value="100"></progress>
+                   <span class="progress_value">100%</span>
+                </div><!-- /.progress-design -->
+                <div class="progress progress-html">
+                   <progress max="100" value="0"></progress>
+                   <span class="progress_value">0%</span>
+                </div><!-- /.progress-html -->
+                <div class="progress progress-time">
+                   &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+                </div><!-- /.progress-time -->
+             </li>
+             <li class="navigation__item">
+                <div class="progress progress-link">
+                   <div class="url">
+                      <div class="url__link">
+                         <a href="desktop/lesson.html">ЛК, друзья</a>
+                      </div><!-- /.url__link -->
+                      <div class="url__info">
+                         <span class="url__file">desktop/lesson.html</span>
+                      </div><!-- /.url__info -->
+                   </div><!-- /.url -->
+                </div><!-- /.progress-link -->
+                <div class="progress progress-design">
+                   <progress max="100" value="100"></progress>
+                   <span class="progress_value">100%</span>
+                </div><!-- /.progress-design -->
+                <div class="progress progress-html">
+                   <progress max="100" value="0"></progress>
+                   <span class="progress_value">0%</span>
+                </div><!-- /.progress-html -->
+                <div class="progress progress-time">
+                   &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+                </div><!-- /.progress-time -->
+             </li>
+             <li class="navigation__item">
+                <div class="progress progress-link">
+                   <div class="url">
+                      <div class="url__link">
+                         <a href="desktop/lesson.html">ЛК, история выплат</a>
+                      </div><!-- /.url__link -->
+                      <div class="url__info">
+                         <span class="url__file">desktop/lesson.html</span>
+                      </div><!-- /.url__info -->
+                   </div><!-- /.url -->
+                </div><!-- /.progress-link -->
+                <div class="progress progress-design">
+                   <progress max="100" value="100"></progress>
+                   <span class="progress_value">100%</span>
+                </div><!-- /.progress-design -->
+                <div class="progress progress-html">
+                   <progress max="100" value="0"></progress>
+                   <span class="progress_value">0%</span>
+                </div><!-- /.progress-html -->
+                <div class="progress progress-time">
+                   &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+                </div><!-- /.progress-time -->
+             </li>
+             <li class="navigation__item">
+                <div class="progress progress-link">
+                   <div class="url">
+                      <div class="url__link">
+                         <a href="desktop/lesson.html">ЛК, настройки</a>
+                      </div><!-- /.url__link -->
+                      <div class="url__info">
+                         <span class="url__file">desktop/lesson.html</span>
+                      </div><!-- /.url__info -->
+                   </div><!-- /.url -->
+                </div><!-- /.progress-link -->
+                <div class="progress progress-design">
+                   <progress max="100" value="100"></progress>
+                   <span class="progress_value">100%</span>
+                </div><!-- /.progress-design -->
+                <div class="progress progress-html">
+                   <progress max="100" value="0"></progress>
+                   <span class="progress_value">0%</span>
+                </div><!-- /.progress-html -->
+                <div class="progress progress-time">
+                   &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+                </div><!-- /.progress-time -->
+             </li>
+             <li class="navigation__item">
+                <div class="progress progress-link">
+                   <div class="url">
+                      <div class="url__link">
+                         <a href="desktop/lesson.html">ЛК, кабинет финансиста</a>
+                      </div><!-- /.url__link -->
+                      <div class="url__info">
+                         <span class="url__file">desktop/lesson.html</span>
+                      </div><!-- /.url__info -->
+                   </div><!-- /.url -->
+                </div><!-- /.progress-link -->
+                <div class="progress progress-design">
+                   <progress max="100" value="100"></progress>
+                   <span class="progress_value">100%</span>
+                </div><!-- /.progress-design -->
+                <div class="progress progress-html">
+                   <progress max="100" value="0"></progress>
+                   <span class="progress_value">0%</span>
+                </div><!-- /.progress-html -->
+                <div class="progress progress-time">
+                   &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+                </div><!-- /.progress-time -->
+             </li>
+          </ul>
+        </li>
 
-      <li class="navigation__item">
-         <div class="progress progress-link">
-            <div class="url">
-               <div class="url__link">
-                  <a href="mail/index.html">Шаблон письма</a>
-               </div>
-               <!-- /.url__link -->
-               <div class="url__info">
-                  <span class="url__file">mail/index.html</span>
-               </div>
-               <!-- /.url__info -->
-            </div>
-            <!-- /.url -->
-         </div>
-         <!-- /.progress-link -->
-         <div class="progress progress-design">
-            <progress max="100" value="100"></progress>
-            <span class="progress_value">100%</span>
-         </div>
-         <!-- /.progress-design -->
-         <div class="progress progress-html">
-            <progress max="100" value="0"></progress>
-            <span class="progress_value">0%</span>
-         </div>
-         <!-- /.progress-html -->
-         <div class="progress progress-time">
-            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-         </div>
-         <!-- /.progress-time -->
-      </li>
-      <li class="navigation__item">
-         <div class="progress progress-link">
-            <div class="url">
-               <div class="url__link">
-                  <a href="ui.html">UI: Контролы и компоненты</a>
-               </div>
-               <!-- /.url__link -->
-               <div class="url__info">
-                  <span class="url__file">pages/ui.html</span>
-               </div>
-               <!-- /.url__info -->
-            </div>
-            <!-- /.url -->
-         </div>
-         <!-- /.progress-link -->
-         <div class="progress progress-design">
-            <progress max="100" value="100"></progress>
-            <span class="progress_value">100%</span>
-         </div>
-         <!-- /.progress-design -->
-         <div class="progress progress-html">
-            <progress max="100" value="0"></progress>
-            <span class="progress_value">0%</span>
-         </div>
-         <!-- /.progress-html -->
-         <div class="progress progress-time">
-            &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-         </div>
-         <!-- /.progress-time -->
-      </li>
-   </ul>
-  </section>
+        <li class="navigation__item">
+           <div class="progress progress-link">
+              <div class="url">
+                 <div class="url__link">
+                    <a href="mail/index.html">Шаблон письма</a>
+                 </div>
+                 <!-- /.url__link -->
+                 <div class="url__info">
+                    <span class="url__file">mail/index.html</span>
+                 </div>
+                 <!-- /.url__info -->
+              </div>
+              <!-- /.url -->
+           </div>
+           <!-- /.progress-link -->
+           <div class="progress progress-design">
+              <progress max="100" value="100"></progress>
+              <span class="progress_value">100%</span>
+           </div>
+           <!-- /.progress-design -->
+           <div class="progress progress-html">
+              <progress max="100" value="0"></progress>
+              <span class="progress_value">0%</span>
+           </div>
+           <!-- /.progress-html -->
+           <div class="progress progress-time">
+              &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+           </div>
+           <!-- /.progress-time -->
+        </li>
+        <li class="navigation__item">
+           <div class="progress progress-link">
+              <div class="url">
+                 <div class="url__link">
+                    <a href="ui.html">UI: Контролы и компоненты</a>
+                 </div>
+                 <!-- /.url__link -->
+                 <div class="url__info">
+                    <span class="url__file">pages/ui.html</span>
+                 </div>
+                 <!-- /.url__info -->
+              </div>
+              <!-- /.url -->
+           </div>
+           <!-- /.progress-link -->
+           <div class="progress progress-design">
+              <progress max="100" value="100"></progress>
+              <span class="progress_value">100%</span>
+           </div>
+           <!-- /.progress-design -->
+           <div class="progress progress-html">
+              <progress max="100" value="0"></progress>
+              <span class="progress_value">0%</span>
+           </div>
+           <!-- /.progress-html -->
+           <div class="progress progress-time">
+              &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+           </div>
+           <!-- /.progress-time -->
+        </li>
+     </ul>
+    </section>
+  </div>
+  <!-- end .container -->
 </div>
-<!-- end .container -->
+<!-- end .progress-page_wrap -->
 {% endblock %}
