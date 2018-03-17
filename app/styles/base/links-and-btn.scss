@@ -138,8 +138,12 @@ a {
   }
 
   &-large {
-    padding-left: 50px;
-    padding-right: 50px;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   &-full {
