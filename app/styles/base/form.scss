@@ -84,7 +84,7 @@ textarea {
 
   &:focus,
   &.focus {
-    box-shadow: 0 2px 4px rgba(48, 54, 60, 0.1);
+    box-shadow: 0 2px 4px rgba(48, 54, 60, .1);
   }
 
   &.form-control--mini {
