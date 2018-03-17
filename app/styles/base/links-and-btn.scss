@@ -15,6 +15,7 @@ a {
     transition: .2s ease;
   }
 
+/*
   &:visited {
     color: $link-visited-color;
 
@@ -23,7 +24,7 @@ a {
       transition: .2s ease;
     }
   }
-
+*/
   &:active,
   &.active {
     color: $link-active-color;
