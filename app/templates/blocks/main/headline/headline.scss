@@ -62,6 +62,36 @@
     margin-right: 30px;
 
     &:last-child { margin-right: 0; }
+
+    &.steps_item--with-arrow-bottom {
+      position: relative;
+
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        left: 135px;
+        bottom: -55px;
+        width: 276px;
+        height: 40px;
+        background-image: inline('arrow-bottom.png');
+      }
+    }
+
+    &.steps_item--with-arrow-top {
+      position: relative;
+
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        left: 135px;
+        top: -55px;
+        width: 276px;
+        height: 40px;
+        background-image: inline('arrow-top.png');
+      }
+    }
   }
 
   &_box {
