@@ -1,6 +1,8 @@
 .main-headline {
   padding-top: 70px;
-  height: 680px;
+  height: 100vh;
+  min-height: 750px;
+  max-height: 1000px;
   width: 100%;
   background-color: rgba(29, 132, 170, .1);
   background-attachment: fixed;
@@ -23,7 +25,8 @@
   &_wrap {
     z-index: 4;
     top: 0;
-    padding-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: absolute;
     height: 100%;
     width: 1200px;
@@ -49,10 +52,6 @@
     color: #ffffff;
     margin: 0;
     font-size: 59px;
-  }
-
-  &_actions {
-    padding-bottom: 30px;
   }
 }
 
