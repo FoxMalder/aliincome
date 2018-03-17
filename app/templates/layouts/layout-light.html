@@ -36,8 +36,6 @@
   {% endblock %}
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% else %}{% endif %}>
-    <main>
-      {% block content %}{% endblock %}
-    </main>
+    {% block content %}{% endblock %}
   </body>
 </html>
