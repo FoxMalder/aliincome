@@ -5,32 +5,32 @@
     <!-- begin .profile-nav_wrap -->
     <div class="profile-nav_wrap">
       <ul class="profile-nav_list">
-        <li class="profile-nav_item active">
-          <a href="" class="profile-nav_link">
+        <li class="profile-nav_item {{ 'active' if profilenav == 'history' else '' }}">
+          <a href="profile-history.html" class="profile-nav_link">
             <span class="profile-nav_icon"><i class="icon icon-history"></i></span>
             <span class="profile-nav_name">История выплат</span>
           </a>
         </li>
-        <li class="profile-nav_item">
-          <a href="" class="profile-nav_link">
+        <li class="profile-nav_item {{ 'active' if profilenav == 'billing' else '' }}">
+          <a href="profile-billing.html" class="profile-nav_link">
             <span class="profile-nav_icon"><i class="icon icon-ruble"></i></span>
             <span class="profile-nav_name">Финансовая статистика</span>
           </a>
         </li>
-        <li class="profile-nav_item">
-          <a href="" class="profile-nav_link">
+        <li class="profile-nav_item {{ 'active' if profilenav == 'payout' else '' }}">
+          <a href="profile-payout.html" class="profile-nav_link">
             <span class="profile-nav_icon"><i class="icon icon-wallets"></i></span>
             <span class="profile-nav_name">Кошельки для вывода</span>
           </a>
         </li>
-        <li class="profile-nav_item">
-          <a href="" class="profile-nav_link">
+        <li class="profile-nav_item {{ 'active' if profilenav == 'referral' else '' }}">
+          <a href="profile-referral.html" class="profile-nav_link">
             <span class="profile-nav_icon"><i class="icon icon-friends"></i></span>
             <span class="profile-nav_name">Приглашенные друзья</span>
           </a>
         </li>
-        <li class="profile-nav_item">
-          <a href="" class="profile-nav_link">
+        <li class="profile-nav_item {{ 'active' if profilenav == 'settings' else '' }}">
+          <a href="profile-settings.html" class="profile-nav_link">
             <span class="profile-nav_icon"><i class="icon icon-settings"></i></span>
             <span class="profile-nav_name">Настройки</span>
           </a>
