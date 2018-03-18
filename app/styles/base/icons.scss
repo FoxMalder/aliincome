@@ -28,8 +28,13 @@
     background-image: inline('friends.png');
   }
 
+  &-ruble {
+    @include size(40px, 48px);
+    background-image: inline('ruble.png');
+  }
+
   &-wallets {
-    @include size(48px, 43px);
+    @include size(48px, 47px);
     background-image: inline('wallets.png');
   }
 
