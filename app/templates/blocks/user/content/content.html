@@ -19,7 +19,7 @@
       </div><!-- /.form-actions -->
 
       <div class="form-group">
-        <p><a href="">Восстановить пароль</a></p>
+        <p><a href="password.html">Восстановить пароль</a></p>
       </div><!-- /.form-group -->
 
       <div class="form-social">
@@ -72,6 +72,25 @@
         <p><a href="">Договор и условия</a></p>
       </div><!-- /.form-group -->
 
+    </form>
+    {% endif %}
+    {% if pagepassword %}
+    <form action="" class="form form-password">
+      <div class="form-group">
+        <p>Забыли пароль? Введите почту и мы пришлем инструкцию, как его восстановить.</p>
+      </div>
+      <div class="form-group">
+        <label for="" class="form-control-label hide" hide>Email</label>
+        <input type="text" id="" class="form-control" placeholder="Email" autofocus>
+      </div><!-- /.form-group -->
+
+      <div class="form-actions full">
+        <button class="btn btn-red" id="submit">Выслать</button>
+      </div><!-- /.form-actions -->
+
+      <div class="form-group">
+        <p>или <a href="login.html">войти</a></p>
+      </div><!-- /.form-group -->
     </form>
     {% endif %}
   </div>
