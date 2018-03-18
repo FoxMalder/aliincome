@@ -7,4 +7,9 @@
     @include size(17px, 16px);
     background-image: svg-load('star.svg', fill=#e92c00);
   }
+
+  &-reload {
+    @include size(20px, 17px);
+    background-image: svg-load('reload.svg', fill=#30363c);
+  }
 }

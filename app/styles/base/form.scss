@@ -37,6 +37,12 @@ textarea {
     margin-bottom: 0;
   }
 
+  &.line {
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+  }
+
   &.status-left {
 
     .form-control-feedback {
@@ -121,4 +127,5 @@ textarea.form-control {
   font-weight: 300;
   line-height: 16px;
   margin-top: 3px;
+  margin-left: 3px;
 }

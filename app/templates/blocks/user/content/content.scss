@@ -6,4 +6,46 @@
     width: 300px;
     margin: 0 auto;
   }
+
+  .captcha-text {
+    width: 70px;
+    max-width: 70px;
+  }
+
+  .captcha-img {
+    min-width: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 15px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    img {
+      display: block;
+      font-size: 11px;
+      line-height: 14px;
+      color: #ccc;
+    }
+  }
+
+  .captcha-reload {
+    position: relative;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+
+    .icon-reload {
+      top: 2px;
+      left: 1px;
+    }
+
+    &:hover .icon-reload {
+      background-image: svg-load('reload.svg', fill=#e92c00);
+    }
+  }
 }
