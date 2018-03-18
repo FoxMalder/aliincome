@@ -5,6 +5,7 @@ keywords:
 bodyclass: profile-page
 login: true
 profilenav: payout
+payout: true
 ---
 
 {% extends "layouts/layout.html" %}
@@ -12,4 +13,5 @@ profilenav: payout
 {% block content %}
   {% include "blocks/profile/dashboard/dashboard.html" %}
   {% include "blocks/profile/nav/nav.html" %}
+  {% include "blocks/profile/content/content.html" %}
 {% endblock %}
