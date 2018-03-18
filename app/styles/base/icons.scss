@@ -17,4 +17,14 @@
     @include size(75px, 78px);
     background-image: inline('user.png');
   }
+
+  &-history {
+    @include size(50px, 50px);
+    background-image: inline('history.png');
+  }
+
+  &-settings {
+    @include size(48px, 47px);
+    background-image: inline('settings.png');
+  }
 }

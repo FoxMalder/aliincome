@@ -1,0 +1,51 @@
+.profile-nav {
+  background-color: #fff;
+
+  &_list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+    margin: 0;
+    bottom: 0;
+    // border-bottom: 1px solid #fff;
+  }
+
+  &_item {
+    background-color: #fff;
+
+    &.active {
+      background-color: #f8fcfd;
+
+      .profile-nav_icon {
+        opacity: 1;
+      }
+
+      .profile-nav_link {
+        color: #30363c;
+      }
+    }
+  }
+
+  &_link {
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: #898e97;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 25px 20px;
+  }
+
+  &_icon {
+    opacity: .55;
+  }
+
+  &_name {
+    margin-top: 15px;
+  }
+}
