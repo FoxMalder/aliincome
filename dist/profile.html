@@ -88,7 +88,7 @@
 
   
 
-    <link href="assets/styles/style.css?v=415fdef255061200f8a488014946093f" rel="stylesheet" />
+    <link href="assets/styles/style.css?v=c0268dc0e4ffd31db729b68274e097a0" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -148,16 +148,26 @@
       <!-- begin .dashboard_info -->
       <div class="dashboard_info">
         <div class="user-info">
-          <div class="user-info_head">Логин</div>
-          <div class="user-info_email">anastazien@yandex.ru</div>
-        </div>
-        <div class="user-info_progress"></div>
+          <div class="user-info_head">Логин</div><!-- /.user-info_head -->
+          <div class="user-info_email">anastazien@yandex.ru</div><!-- /.user-info_email -->
+        </div><!-- /.user-info -->
+        <div class="user-progress">
+          <div class="user-progress_info">
+            <div class="progress-info">Новичек:</div>
+            <div class="progress-info">3% из 10%</div>
+          </div>
+          <div class="user-progress_bar"></div>
+          <div class="user-progress_info">
+            <div class="progress-info">Вы сэкономили:</div>
+            <div class="progress-info">250 000 руб.</div>
+          </div>
+        </div><!-- /.user-progress -->
       </div>
       <!-- end .dashboard_info -->
       <!-- begin .dashboard_balance -->
       <div class="dashboard_balance">
         <div class="dashboard_box">
-          <div class="dashboard_box_header">Доступно для вывода руб.:</div>
+          <div class="dashboard_box_header">Доступно <br> для вывода руб.:</div>
           <div class="dashboard_box_value">285&nbsp;358</div>
           <div class="dashboard_box_actions"><a href="" class="btn btn-red">Вывести</a></div>
         </div>
@@ -166,7 +176,7 @@
       <!-- begin .dashboard_waiting -->
       <div class="dashboard_waiting">
         <div class="dashboard_box">
-          <div class="dashboard_box_header">В ожидании выплаты руб.:</div>
+          <div class="dashboard_box_header">В ожидании <br> выплаты руб.:</div>
           <div class="dashboard_box_value">0</div>
           <div class="dashboard_box_actions"><a href="" class="">Что это значит?</a></div>
         </div>
@@ -175,8 +185,8 @@
       <!-- begin .dashboard_action -->
       <div class="dashboard_action">
         <div class="dashboard_box">
-          <div class="dashboard_box_header">Активируйте свой кешбэк сейчас:</div>
-          <div class="dashboard_box_actions"><a href="" class="btn btn-outline">Что это значит?</a></div>
+          <div class="dashboard_box_header">Активируйте свой <br> кешбэк сейчас:</div>
+          <div class="dashboard_box_actions"><a href="" class="btn btn-outline">Активировать</a></div>
           <a href="">Скачайте расширение</a>
         </div>
       </div>
