@@ -77,9 +77,10 @@
   }
 
   &_action {
-    position: absolute;
+    // position: absolute;
     right: 0;
     background-color: #518a97;
+    background-image: linear-gradient(#518a97, #518297);
     height: 100%;
     padding: 40px 30px 50px 30px;
 
