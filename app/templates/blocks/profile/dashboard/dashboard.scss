@@ -3,3 +3,28 @@
   padding-bottom: 20px;
   background-image: linear-gradient(#599fae, #5995ae);
 }
+
+.user-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 2px 20px 2px rgba(48, 54, 60, .5);
+  border: 20px solid rgba(225, 225, 225, .35);
+  position: relative;
+
+  &-box {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
