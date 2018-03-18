@@ -74,13 +74,15 @@ textarea {
     }
   }
 
-  a {
+  a:not(.btn) {
     color: #30363c;
 
     &:hover {
       color: $link-hover-color;
     }
   }
+
+  p {margin-bottom: 0;}
 }
 
 .form-actions {
@@ -90,13 +92,12 @@ textarea {
 
 .form-control-label {
   font-weight: bold;
-  display: block;
 }
 
 .help-text {
   font-size: 11px;
   line-height: 12px;
-  opacity: .65;
+  opacity: .55;
 }
 
 .form-control {
