@@ -3,10 +3,29 @@
   <!-- begin .page_content_form -->
   <div class="page_content_form">
     {% if pagelogin %}
-    112313
+    <form action="" class="form form-login">
+      <div class="form-group">
+        <label for="" class="form-control-label hide" hide>Email</label>
+        <input type="text" id="" class="form-control" placeholder="Email" autofocus>
+      </div><!-- /.form-group -->
+
+      <div class="form-group">
+        <label for="" class="form-control-label hide">Пароль</label>
+        <input type="password" id="" class="form-control" placeholder="Пароль">
+      </div><!-- /.form-group -->
+
+      <div class="form-actions full">
+        <button class="btn btn-red" id="submit">Вход</button>
+      </div><!-- /.form-actions -->
+
+      <div class="form-group">
+        <p><a href="">Восстановить пароль</a></p>
+      </div><!-- /.form-group -->
+
+    </form>
     {% endif %}
     {% if pageregistration %}
-    <form action="" class="form form-user">
+    <form action="" class="form form-registration">
       <div class="form-group">
         <label for="" class="form-control-label hide" hide>Email</label>
         <input type="text" id="" class="form-control" placeholder="Email" autofocus>
