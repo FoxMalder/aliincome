@@ -69,6 +69,14 @@ textarea {
       }
     }
   }
+
+  a {
+    color: #30363c;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
 }
 
 .form-actions {
