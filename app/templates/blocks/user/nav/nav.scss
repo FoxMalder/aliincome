@@ -8,15 +8,15 @@
     height: 100%;
     display: flex;
     align-items: flex-start;
-    align-content: flex-start;
+    align-content: center;
     flex-direction: column;
+    justify-content: flex-end;
     width: 300px;
     margin: 0 auto;
   }
 
   &_logo {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 40px;
   }
 }
 

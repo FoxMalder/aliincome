@@ -68,6 +68,10 @@ textarea {
         background-color: #fff;
       }
     }
+
+    .invalid-feedback {
+      display: block;
+    }
   }
 
   a {
@@ -128,6 +132,7 @@ textarea.form-control {
 }
 
 .invalid-feedback {
+  display: none;
   position: relative;
   color: #e92c00;
   font-family: 'Roboto';
