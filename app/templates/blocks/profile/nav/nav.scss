@@ -13,6 +13,7 @@
 
   &_item {
     background-color: #fff;
+    position: relative;
 
     &.active {
       background-color: #f8fcfd;
@@ -24,6 +25,10 @@
       .profile-nav_link {
         color: #30363c;
       }
+    }
+
+    &.support_item {
+      right: -140px;
     }
   }
 
@@ -55,6 +60,11 @@
 
   &_icon {
     opacity: .55;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 
   &_name {

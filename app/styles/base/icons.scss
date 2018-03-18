@@ -42,4 +42,9 @@
     @include size(48px, 47px);
     background-image: inline('settings.png');
   }
+
+  &-support {
+    @include size(47px, 45px);
+    background-image: inline('support.png');
+  }
 }
