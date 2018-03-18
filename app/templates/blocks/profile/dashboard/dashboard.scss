@@ -14,19 +14,19 @@
     padding-bottom: 20px;
     min-width: 200px;
     flex-basis: 200px;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   &_info {
-    width: 219px;
+    width: 200px;
     position: relative;
-    margin-right: 20px;
+    margin-right: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
   &_balance {
-    width: 219px;
+    width: 200px;
     position: relative;
     height: 100%;
     margin-right: 20px;
@@ -155,6 +155,7 @@
 }
 
 .user-progress {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -171,5 +172,26 @@
     align-items: center;
     align-content: center;
     justify-content: space-between;
+  }
+
+  .progress_bar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.progress_bar {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 13px;
+  position: relative;
+  overflow: hidden;
+
+  &-line {
+    position: relative;
+    height: 5px;
+    background-color: #e92c00;
+    text-indent: -99999px;
   }
 }
