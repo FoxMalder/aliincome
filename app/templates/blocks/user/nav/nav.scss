@@ -34,6 +34,7 @@
 
       .user-page-menu_link {
         background-color: #f8fcfd;
+        color: #30363c;
       }
     }
   }
@@ -43,10 +44,14 @@
     background-color: #fff;
     display: block;
     padding: 20px 30px;
-    color: #30363c;
+    color: #898e97;
     font-family: 'Roboto';
     font-size: 25px;
     line-height: 1;
     font-weight: 500;
+
+    &:hover {
+      color: #30363c;
+    }
   }
 }

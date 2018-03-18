@@ -30,7 +30,6 @@ textarea {
 
 .form-group,
 .form-actions {
-  display: flex;
   position: relative;
   margin-bottom: 20px;
 
@@ -48,6 +47,20 @@ textarea {
 
     .form-control {
       padding-left: 40px;
+    }
+  }
+
+  &.has-error {
+
+    .form-control {
+      border-color: #e9edef;
+      background-color: #fff8f7;
+      color: #898e97;
+
+      &:focus,
+      &.focus {
+        background-color: #fff;
+      }
     }
   }
 }
@@ -98,4 +111,14 @@ textarea.form-control {
   min-height: 150px;
   max-height: 251px;
   resize: vertical;
+}
+
+.invalid-feedback {
+  position: relative;
+  color: #e92c00;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  margin-top: 3px;
 }
