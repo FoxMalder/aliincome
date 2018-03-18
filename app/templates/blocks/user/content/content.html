@@ -2,6 +2,10 @@
 <div class="user-page_content">
   <!-- begin .page_content_form -->
   <div class="page_content_form">
+    {% if pagelogin %}
+    112313
+    {% endif %}
+    {% if pageregistration %}
     <form action="" class="form form-user">
       <div class="form-group">
         <label for="" class="form-control-label hide" hide>Email</label>
@@ -63,6 +67,7 @@
         </div><!-- /.social-auth -->
       </div><!-- /.form-social -->
     </form>
+    {% endif %}
   </div>
   <!-- end .page_content_form -->
 </div>
