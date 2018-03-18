@@ -1,16 +1,79 @@
 .dashboard {
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-image: linear-gradient(#599fae, #5995ae);
 
   &_wrap {
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    position: relative;
   }
 
   &_photo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 200px;
+    flex-basis: 200px;
     margin-right: 20px;
+  }
+
+  &_info {
+    width: 219px;
+    position: relative;
+    height: 100%;
+    margin-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &_balance {
+    width: 219px;
+    position: relative;
+    height: 100%;
+    margin-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &_waiting {
+    width: 219px;
+    position: relative;
+    height: 100%;
+    margin-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &_box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-between;
+
+    &_header {
+      color: #fff;
+      font-family: 'Roboto';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    &_value {
+      color: #fff;
+      font-family: 'Roboto';
+      font-size: 45px;
+      font-weight: 400;
+    }
+  }
+
+  &_action {
+    position: absolute;
+    right: 0;
+    background-color: #518a97;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -63,5 +126,21 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+  }
+}
+
+.user-info {
+  color: #fff;
+  font-family: 'Roboto';
+  line-height: 30px;
+
+  &_head {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  &_email {
+    font-size: 18px;
+    font-weight: 300;
   }
 }
