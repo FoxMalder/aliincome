@@ -23,6 +23,16 @@
     background-image: inline('history.png');
   }
 
+  &-friends {
+    @include size(48px, 43px);
+    background-image: inline('friends.png');
+  }
+
+  &-wallets {
+    @include size(48px, 43px);
+    background-image: inline('wallets.png');
+  }
+
   &-settings {
     @include size(48px, 47px);
     background-image: inline('settings.png');
