@@ -12,4 +12,9 @@
     @include size(20px, 17px);
     background-image: svg-load('reload.svg', fill=#30363c);
   }
+
+  &-user {
+    @include size(75px, 78px);
+    background-image: inline('user.png');
+  }
 }

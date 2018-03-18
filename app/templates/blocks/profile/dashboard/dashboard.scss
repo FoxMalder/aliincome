@@ -28,3 +28,30 @@
     justify-content: center;
   }
 }
+
+.bage {
+  position: absolute;
+  border-radius: 50%;
+  width: 69px;
+  height: 69px;
+  background-color: #30363c;
+  box-shadow: 0 1px 2px rgba(48, 54, 60, 0.3);
+  right: -35px;
+  bottom: 10px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  &-box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
