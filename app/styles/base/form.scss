@@ -88,6 +88,17 @@ textarea {
   align-content: center;
 }
 
+.form-control-label {
+  font-weight: bold;
+  display: block;
+}
+
+.help-text {
+  font-size: 11px;
+  line-height: 12px;
+  opacity: .65;
+}
+
 .form-control {
   display: block;
   width: 100%;
