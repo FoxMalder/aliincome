@@ -11,8 +11,15 @@
 .ref-link {
   background-color: #5996ae;
   border-radius: 5px;
-  padding: 5px 11px;
+  padding: 5px 12px;
   display: inline-block;
   color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 20px;
   margin-left: 5px;
+
+  span {
+    border-bottom: 1px dotted #fff;
+  }
 }
