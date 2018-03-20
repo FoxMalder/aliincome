@@ -122,11 +122,14 @@ textarea {
   }
 
   &:hover {
+    z-index: 1;
     border: 1px solid rgb(215, 219, 223);
   }
 
   &:focus,
   &.focus {
+    outline: none;
+    border: 1px solid rgb(215, 219, 223);
     box-shadow: 0 2px 4px rgba(48, 54, 60, .1);
   }
 
@@ -153,4 +156,44 @@ textarea.form-control {
   line-height: 16px;
   margin-top: 3px;
   margin-left: 3px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  width: 100%;
+
+  + .input-group {
+    margin-left: 0;
+  }
+
+  & .form-control:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    appearance: none;
+  }
+
+  & > .form-control:first-child {
+    margin-left: 0;
+    max-width: 60px;
+  }
+
+  & > .form-control {
+    position: relative;
+    flex: 0 1 auto;
+
+    &:nth-child(2) {
+      max-width: 100%;
+    }
+  }
+
+  & > .form-control:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .form-control + .form-control {
+    margin-left: -2px;
+  }
 }
