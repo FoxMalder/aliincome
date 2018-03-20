@@ -51,7 +51,7 @@ table {
     background-color: $table-bg;
 
     &:hover {
-      background-color: rgba(247, 251, 252, 0.39);
+      background-color: rgba(247, 251, 252, .35);
     }
 
     &:last-child {
