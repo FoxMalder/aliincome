@@ -96,18 +96,32 @@
 
       <!-- begin Шаг два -->
       <!-- end Шаг два -->
-
+{#
       <!-- begin Шаг три -->
+      <div class="form-group">
+        <label for="" class="form-control-label hide">Придумайте пароль</label>
+        <input type="password" id="" class="form-control" placeholder="Пароль (6 и более символов)">
+      </div><!-- /.form-group -->
+      <div class="form-group">
+        <label for="" class="form-control-label hide">Подтверждение пароля</label>
+        <input type="password" id="" class="form-control" placeholder="Пароль ещё раз">
+      </div><!-- /.form-group -->
+      <div class="form-actions full">
+        <button class="btn btn-red" id="submit">Поменять пароль</button>
+      </div><!-- /.form-actions -->
       <!-- end Шаг три -->
+#}
 
+{#
       <!-- begin Шаг четыре -->
       <div class="form-group">
         <p>Ваш пароль изменен.</p>
       </div>
       <div class="form-group">
-        <p>или <a href="login.html">войти</a></p>
+        <p><a href="login.html" class="btn btn-red">Войти</a></p>
       </div><!-- /.form-group -->
       <!-- end Шаг четыре -->
+#}
     </form>
     {% endif %}
   </div>
