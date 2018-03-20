@@ -58,4 +58,17 @@
       opacity: 1;
     }
   }
+
+  &-plus {
+    @include size(14px);
+    background-image: svg-load('plus.svg');
+    opacity: .5;
+  }
+
+  &-minus {
+    @include size(14px, 2px);
+    background-image: svg-load('minus.svg');
+    top: -2px;
+    opacity: .5;
+  }
 }
