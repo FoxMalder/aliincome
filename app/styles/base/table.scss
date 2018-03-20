@@ -1,3 +1,7 @@
+$table-bg: #fff;
+$table-padding: 20px 20px 18px 20px;
+$table-border-color: #eaeef0;
+
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -5,11 +9,37 @@ caption {
   text-align: left;
 }
 
+.table_wrap {
+  margin: 0 -20px 15px -20px;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  background-color: transparent;
+  background-color: $table-bg;
   width: 100%;
   max-width: 100%;
   border: 1px solid transparent;
+  font-family: 'Roboto';
+  color: #30363c;
+
+  th {
+    text-align: left;
+    border-bottom: 1px solid $table-border-color;
+    padding: $table-padding;
+    font-size: 14px;
+    line-height: 18px;
+    color: #30363c;
+    font-weight: bold;
+  }
+
+  td {
+    border-bottom: 1px solid $table-border-color;
+    padding: $table-padding;
+  }
+
+  tr:last-child {
+
+    td { border-bottom-color: transparent; }
+  }
 }
