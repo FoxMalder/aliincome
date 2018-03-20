@@ -38,11 +38,13 @@ table {
     line-height: 18px;
     color: #30363c;
     font-weight: bold;
+    vertical-align: middle;
   }
 
   td {
     border-bottom: 1px solid $table-border-color;
     padding: $table-padding;
+    vertical-align: middle;
   }
 
   tr {

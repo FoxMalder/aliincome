@@ -47,4 +47,15 @@
     @include size(47px, 45px);
     background-image: inline('support.png');
   }
+
+  &-help {
+    @include size(20px, 19px);
+    background-image: inline('help.png');
+    top: 1px;
+    opacity: .55;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
