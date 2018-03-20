@@ -32,6 +32,17 @@ a {
 
 .pseudolink {
   border-bottom: 1px dashed;
+
+  &:hover,
+  &.hover {
+    color: $link-hover-color;
+    transition: .2s ease;
+    cursor: pointer;
+  }
+
+  &.red {
+    color: $link-active-color;
+  }
 }
 
 // Кнопки
