@@ -1,5 +1,6 @@
 $table-bg: #fff;
 $table-padding: 20px 20px 18px 20px;
+$table-padding-mini: 10px 15px 9px 15px;
 $table-border-color: #eaeef0;
 
 caption {
@@ -23,6 +24,12 @@ table {
   font-family: 'Roboto';
   color: #30363c;
 
+  &.table-mini {
+    th, td {
+      padding: $table-padding-mini;
+    }
+  }
+
   th {
     text-align: left;
     border-bottom: 1px solid $table-border-color;
@@ -38,8 +45,16 @@ table {
     padding: $table-padding;
   }
 
-  tr:last-child {
+  tr {
+    background-color: $table-bg;
 
-    td { border-bottom-color: transparent; }
+    &:hover {
+      background-color: rgba(247, 251, 252, 0.39);
+    }
+
+    &:last-child {
+
+      td { border-bottom-color: transparent; }
+    }
   }
 }
