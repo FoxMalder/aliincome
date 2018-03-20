@@ -148,6 +148,34 @@ a {
     }
   }
 
+  &-white {
+    background-color: #fff;
+    border-color: #e9edef;
+    color: #828282;
+
+    &:hover,
+    &.hover {
+      border-color: #d7dbdf;
+      color: #30363c;
+      box-shadow: 0 2px 4px rgba(48,54,60,0.1);
+    }
+
+    &:focus,
+    &.focus {
+      border-color: #545860;
+      color: #898e97;
+    }
+
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(255, 255, 255);
+      background-color: rgb(214, 217, 220);
+      border-color: rgb(214, 217, 220);
+    }
+  }
+
   &-mini {
     padding: 9px 19px 9px 19px;
   }
