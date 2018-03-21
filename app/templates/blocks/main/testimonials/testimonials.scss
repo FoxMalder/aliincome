@@ -100,3 +100,21 @@
     }
   }
 }
+
+._longtext {
+
+  &._less {
+
+    .SecSec, .readLess { display: none; }
+  }
+
+  &._show {
+
+    .readMore { display: none; }
+  }
+
+  &._show {
+
+    .SecSec, .readLess { display: inline; }
+  }
+}
