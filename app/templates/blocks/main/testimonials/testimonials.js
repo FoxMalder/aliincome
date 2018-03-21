@@ -1,6 +1,6 @@
 function AddReadMore() {
-  var lengthLimit = 120;
-  var readMoreTxt = " ...";
+  var lengthLimit = 290;
+  var readMoreTxt = "...";
   var readLessTxt = "";
   var longTextElement = $("._longtext");
 

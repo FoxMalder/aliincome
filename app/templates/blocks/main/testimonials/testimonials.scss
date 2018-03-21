@@ -5,6 +5,7 @@
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
+    transition: all .3s ease;
   }
 
   &_item {
@@ -19,9 +20,21 @@
 
     &:last-child { margin-right: 0; }
 
-    &.open,
     &:hover {
       box-shadow: 0 17px 22px 5px rgba(48, 54, 60, .1);
+
+      .more_item {
+        background-color: $link-hover-color;
+      }
+    }
+
+    &.open {
+      box-shadow: 0 17px 22px 5px rgba(48, 54, 60, .1);
+
+      .main-testimonials_more {
+        opacity: 0;
+        transform: translateX(35px);
+      }
     }
   }
 
@@ -75,6 +88,7 @@
     right: 0;
     margin-right: 20px;
     margin-bottom: 20px;
+    transition: all .3s ease;
   }
 }
 
@@ -82,6 +96,7 @@
   display: flex;
   align-items: center;
   align-content: center;
+  transition: all .3s ease;
 
   &_item {
     width: 6px;
@@ -89,6 +104,7 @@
     background-color: #30363c;
     margin-right: 3px;
     border-radius: 6px;
+    transition: all .3s ease;
 
     &:last-child { margin-right: 0; }
   }
