@@ -81,4 +81,9 @@
       opacity: 1;
     }
   }
+
+  &-calendar {
+    @include size(20px);
+    background-image: svg-load('calendar.svg');
+  }
 }
