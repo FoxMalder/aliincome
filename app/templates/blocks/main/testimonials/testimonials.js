@@ -1,10 +1,10 @@
 function AddReadMore() {
-  var lengthLimit = 290;
-  var readMoreTxt = "...";
-  var readLessTxt = "";
-  var longTextElement = $("._longtext");
+    var lengthLimit = 290;
+    var readMoreTxt = "...";
+    var readLessTxt = "";
+  var longTxtElement = $("._longtext");
 
-  longTextElement.each(function() {
+  longTxtElement.each(function() {
     if ($(this).find(".firstSec").length)
   return;
 
@@ -12,7 +12,7 @@ function AddReadMore() {
   if (allstr.length > lengthLimit) {
     var firstSet = allstr.substring(0, lengthLimit);
     var secdHalf = allstr.substring(lengthLimit, allstr.length);
-    var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class='readMore'  title='Click to Show More'>" + readMoreTxt + "</span><span class='readLess' title='Click to Show Less'>" + readLessTxt + "</span>";
+    var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class=\"readMore\">" + readMoreTxt + "</span><span class=\"readLess\">" + readLessTxt + "</span>";
     $(this).html(strtoadd);
   }
 

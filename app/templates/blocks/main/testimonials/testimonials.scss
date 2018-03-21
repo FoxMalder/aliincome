@@ -119,18 +119,9 @@
 
 ._longtext {
 
-  &._less {
+  &._less { .SecSec, .readLess { display: none; } }
 
-    .SecSec, .readLess { display: none; }
-  }
+  &._show { .readMore { display: none; } }
 
-  &._show {
-
-    .readMore { display: none; }
-  }
-
-  &._show {
-
-    .SecSec, .readLess { display: inline; }
-  }
+  &._show { .SecSec, .readLess { display: inline; } }
 }
