@@ -47,9 +47,13 @@
     &-box {
       width: 60px;
       height: 60px;
-      background-color: #2f383e;
       border-radius: 50%;
       overflow: hidden;
+      background-color: #f8fcfd;
+
+      img {
+        vertical-align: bottom;
+      }
     }
   }
 
