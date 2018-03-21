@@ -3,12 +3,13 @@
 
   &_list {
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
   }
 
   &_item {
     flex-basis: 33%;
+    min-height: 300px;
     margin-right: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -57,7 +58,7 @@
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
 
     p:last-child { margin-bottom: 0; }
   }
