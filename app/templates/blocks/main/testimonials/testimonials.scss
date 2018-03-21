@@ -36,6 +36,15 @@
         transform: translateX(35px);
       }
     }
+
+    // скрыть точки в блоке с таким классом
+    &.no-more {
+
+      .main-testimonials_more {
+        display: none;
+        visibility: hidden;
+      }
+    }
   }
 
   &_box {
