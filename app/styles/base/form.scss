@@ -146,6 +146,14 @@ textarea.form-control {
   resize: vertical;
 }
 
+select.form-control {
+  // appearance: none;
+
+  &:not([size]):not([multiple]) {
+    height: 42px;
+  }
+}
+
 .invalid-feedback {
   display: none;
   position: relative;

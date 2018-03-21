@@ -88,7 +88,7 @@
 
   
 
-    <link href="assets/styles/style.css?v=ccaf05c7841b2ef43bba059d31bf9785" rel="stylesheet" />
+    <link href="assets/styles/style.css?v=aaf5161c00b612e5f0ca85f9e4ee0868" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -268,9 +268,21 @@
       <!-- begin .filter -->
       <div class="filter">
         <div class="filter-name">Период</div>
-        <div class="form-group"><input type="date" class="form-control mini" value="01.04.2017 - 29.07.17"></div>
-        <div class="form-group"><input type="date" class="form-control mini"></div>
-        <div class="form-actions"><button class="btn btn-white">Показать</button></div>
+        <div class="form-group">
+          <input type="date" class="form-control mini" value="01.04.2017 - 29.07.17">
+        </div><!-- /.form-group -->
+        <div class="form-group">
+          <input type="date" class="form-control mini">
+        </div><!-- /.form-group -->
+        <div class="filter-name">Статус</div>
+        <div class="form-group">
+          <select class="form-control">
+            <option value="1" selected>Отклонена</option>
+            <option value="2">Обрабатывается</option>
+            <option value="3">Принята</option>
+            <option value="4">Одобрена</option>
+          </select>
+        </div><!-- /.form-group -->
       </div>
       <!-- end .filter -->
       <!-- begin .table_wrap -->
