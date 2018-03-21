@@ -71,4 +71,14 @@
     top: -2px;
     opacity: .5;
   }
+
+  &-logout {
+    @include size(19px, 18px);
+    background-image: inline('logout.png');
+    opacity: .3;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
