@@ -166,19 +166,20 @@
   margin-bottom: 25px;
   }
 
-  .ui-page p code {
-  padding: .2rem .4rem;
-  font-size: 90%;
-  color: #2f6f9f;
-  background-color: #f7f7f9;
-  border-radius: .25rem;
+  code:not([class]), tt:not([class]) {
+      background: rgba(238, 229, 229, 0.15);
+      border: 1px solid #fafafa;
+      color: #cb3716;
+      border-radius: 3px;
+      padding: 2px 5px;
+      font-size: 0.85em;
   }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <div class="ui-page">
-  <div class="container">
+  <div class="container-fluid">
     <div class="page outline">
 
       <div class="page__content content">
@@ -189,15 +190,15 @@
 
           <h3>Кнопки</h3>
 
-          <p>Кнопки включаются через класс <code>.btn</code>, который может быть применёнк любому элементу, но лучше всего использовать <code>&lt;a&gt;</code> или <code>&lt;button&gt;</code>, . В кнопку можно превратить ссылку, обычную кнопку и инпут (ну и на самом деле вообще всё). У кнопок существуют разные модификации. Прмеры — ниже.</p>
+          <p>Кнопки включаются через класс <code>.btn</code>, который может быть применёнк любому элементу, но лучше всего использовать <code>&lt;a&gt;</code> или <code>&lt;button&gt;</code>, . В кнопку можно превратить ссылку, обычную кнопку и инпут (ну и на самом деле вообще всё). У кнопок существуют разные модификации. Прмеры — ниже. <em>Вторая кнопка слева она специально такая, это — кнопка для тёмного фона.</em></p>
 
           <div class="row">
 
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-red">Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-red">Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-red"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -205,8 +206,8 @@
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-outline">Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline">Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -214,8 +215,8 @@
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-outline-light">Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline-light">Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline-light"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -223,21 +224,23 @@
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-white">Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-white">Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-white"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
 
           </div>
 
+          <p>Заблокированные состояния кнопок для каждого модификатора показаны отдельным этажом. Блокирование кнопки происходит через класс или атрибут <code>disabled</code>.</p>
+
           <div class="row">
 
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-red" disabled>Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-red" disabled>Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-red" disabled&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -245,8 +248,26 @@
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-outline" disabled>Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline" disabled>Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline" disabled&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline-light" disabled>Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline-light" disabled&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-white" disabled>Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-white" disabled&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -255,15 +276,15 @@
 
           <h4>Размеры кнопок</h4>
 
-          <p>Размеры управляются через добавчные классы. Есть три размера: стандартный, большой — <code>.btn-big</code>, маленький — <code>.btn-mini</code>. Также есть класс, который растянет кнопку на 100% ширины родительского блока: <code>.btn-full</code>.</p>
+          <p>Размеры управляются через добавчные классы. Есть три размера: стандартный, большой — <code>.btn-large</code>, маленький — <code>.btn-mini</code>. Также есть класс, который растянет кнопку на 100% ширины родительского блока: <code>.btn-full</code>.</p>
 
-          <div class="row end-xs">
+          <div class="row bottom-xs">
 
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-red btn-large">Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-red btn-large">Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-red btn-large"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -271,8 +292,8 @@
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-red btn-mini">Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline-light btn-mini">Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline-light btn-mini"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -280,8 +301,8 @@
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element"><button type="button" class="btn btn-red btn-full">Записаться</button></div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><button type="button" class="btn btn-white btn-full">Вот-вот запустим</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-white btn-mini"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
