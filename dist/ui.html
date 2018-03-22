@@ -126,6 +126,723 @@
 
     <main>
       
+<style>
+  .ui-page pre > code {
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Sans Mono", "Consolas", "Courier", monospace;
+  }
+
+  .ui-page .ui-demo {
+  margin-bottom: 20px;
+  }
+
+  .ui-page .ui-demo:last-child {
+  margin-bottom: 15px;
+  }
+
+  .ui-page .ui-demo--icon .ui-demo-element {
+  margin-bottom: 0;
+  margin-left: 5px;
+  }
+
+  .ui-page .ui-demo--icon .ui-demo-element i:first-child {
+  margin-right: 5px;
+  }
+
+  .ui-page .ui-demo-element {
+  margin-bottom: 10px;
+  }
+
+  .ui-page .ui-demo .ui-demo-code pre {
+  margin-bottom: 0;
+  }
+
+  .ui-page .content__box-icon {
+  background-color: #f7f7f8;
+  }
+
+  .ui-page .content__box-icon p {
+  margin-bottom: 25px;
+  }
+
+  .ui-page p code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: #2f6f9f;
+  background-color: #f7f7f9;
+  border-radius: .25rem;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<div class="ui-page">
+  <div class="container">
+    <div class="page outline">
+
+      <div class="page__content content">
+
+        <div class="content__box">
+
+          <h2>Компоненты и элементы</h2>
+
+          <h3>Кнопки</h3>
+
+          <p>Кнопки включаются через класс <code>.btn</code>, который может быть применёнк любому элементу, но лучше всего использовать <code>&lt;a&gt;</code> или <code>&lt;button&gt;</code>, . В кнопку можно превратить ссылку, обычную кнопку и инпут (ну и на самом деле вообще всё). У кнопок существуют разные модификации. Прмеры — ниже.</p>
+
+          <div class="row">
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-red">Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline">Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline-light">Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-white">Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-red" disabled>Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-outline" disabled>Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+          </div>
+
+          <h4>Размеры кнопок</h4>
+
+          <p>Размеры управляются через добавчные классы. Есть три размера: стандартный, большой — <code>.btn-big</code>, маленький — <code>.btn-mini</code>. Также есть класс, который растянет кнопку на 100% ширины родительского блока: <code>.btn-full</code>.</p>
+
+          <div class="row end-xs">
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-red btn-large">Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-red btn-mini">Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element"><button type="button" class="btn btn-red btn-full">Записаться</button></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+          </div>
+
+          <h3>Поля и элементы форм</h3>
+
+          <h3>Таблицы</h3>
+
+          <div class="row">
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <label class="switch">
+                    <input type="checkbox" class="switch__control" checked disabled>
+                    <span class="switch__slider"></span>
+                    <span class="switch__text">Семинары</span>
+                  </label>
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot; checked&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <label class="switch">
+                    <input type="checkbox" class="switch__control" checked>
+                    <span class="switch__slider"></span>
+                    <span class="switch__text">Семинары</span>
+                  </label>
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot; checked disabled&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <div class="form-check">
+                    <input type="checkbox" name="uiblock" id="ui1" disabled>
+                    <label for="ui1">
+                      <span class="form-check-control">Семинары</span>
+                    </label>
+                  </div><!-- /.form-check -->
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui1" disabled&gt;<br />  &lt;label for="ui1"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <div class="form-check">
+                    <input type="checkbox" name="uiblock" id="ui2">
+                    <label for="ui2">
+                      <span class="form-check-control">Семинары</span>
+                    </label>
+                  </div><!-- /.form-check -->
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui2"&gt;<br />  &lt;label for="ui2"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <label class="switch">
+                    <input type="checkbox" class="switch__control" disabled>
+                    <span class="switch__slider"></span>
+                    <span class="switch__text">Семинары</span>
+                  </label>
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot; disabled&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <label class="switch">
+                    <input type="checkbox" class="switch__control">
+                    <span class="switch__slider"></span>
+                    <span class="switch__text">Семинары</span>
+                  </label>
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot;&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <div class="form-check">
+                    <input type="checkbox" name="uiblock" id="ui3" disabled checked>
+                    <label for="ui3">
+                      <span class="form-check-control">Семинары</span>
+                    </label>
+                  </div><!-- /.form-check -->
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui3" disabled checked&gt;<br />  &lt;label for="ui3"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <div class="form-check">
+                    <input type="checkbox" name="uiblock" id="ui4" checked>
+                    <label for="ui4">
+                      <span class="form-check-control">Семинары</span>
+                    </label>
+                  </div><!-- /.form-check -->
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui4" checked&gt;<br />  &lt;label for="ui4"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+            <div class="col-xs-2">
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <a href="#" class="more-link"><span>Показать ответ</span></a>
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;a href=&quot;#&quot; class=&quot;more-link&quot;&gt;&lt;span&gt;Показать ответ&lt;/span&gt;&lt;/a&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+
+                  <div class="loading">
+                    <div class="loading__icon">
+                      <div class="spinner">
+                        <svg viewBox="0 0 64 64"><g><defs><linearGradient id="sGD" gradientUnits="userSpaceOnUse" x1="55" y1="46" x2="2" y2="46"><stop offset="0.1" class="stop1"></stop><stop offset="1" class="stop2" fill="red"></stop></linearGradient></defs><g stroke-width="4" stroke-linecap="round" fill="none" transform="rotate(134.304 32 32)"><path stroke="url(#sGD)" d="M4,32 c0,15,12,28,28,28c8,0,16-4,21-9"></path><path d="M60,32 C60,16,47.464,4,32,4S4,16,4,32"></path><animateTransform values="0,32,32;360,32,32" attributeName="transform" type="rotate" repeatCount="indefinite" dur="750ms"></animateTransform></g></g></svg>
+                      </div><!-- /.spinner -->
+                    </div><!-- /.loading__icon -->
+                    <div class="loading__text">Загрузка...</div><!-- /.loading__text -->
+                  </div><!-- /.loading -->
+
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre style="width: 188px;"><code class="html">&lt;div class="loading"&gt;<br />  &lt;div class="loading__icon"&gt;<br />    &lt;div class="spinner"&gt;<br />      &lt;svg viewBox="0 0 64 64"&gt;&lt;g&gt;&lt;defs&gt;&lt;linearGradient id="sGD" gradientUnits="userSpaceOnUse" x1="55" y1="46" x2="2" y2="46"&gt;&lt;stop offset="0.1" class="stop1"&gt;&lt;/stop&gt;&lt;stop offset="1" class="stop2" fill="red"&gt;&lt;/stop&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g stroke-width="4" stroke-linecap="round" fill="none" transform="rotate(134.304 32 32)"&gt;&lt;path stroke="url(#sGD)" d="M4,32 c0,15,12,28,28,28c8,0,16-4,21-9"&gt;&lt;/path&gt;&lt;path d="M60,32 C60,16,47.464,4,32,4S4,16,4,32"&gt;&lt;/path&gt;&lt;animateTransform values="0,32,32;360,32,32" attributeName="transform" type="rotate" repeatCount="indefinite" dur="750ms"&gt;&lt;/animateTransform&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;<br />    &lt;/div&gt;&lt;!-- /.spinner --&gt;<br />  &lt;/div&gt;&lt;!-- /.loading__icon --&gt;<br />  &lt;div class="loading__text"&gt;Загрузка...&lt;/div&gt;&lt;!-- /.loading__text --&gt;<br />&lt;/div&gt;&lt;!-- /.loading --&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+
+                  <div class="circle"></div>
+
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;div class="circle"&gt;&lt;/div&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+                  <a href="#" class="more-link more-link--right"><span>Показать полностью</span></a>
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;a href="#" class="more-link more-link--right"&gt;&lt;span&gt;Показать полностью&lt;/span&gt;&lt;/a&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+            <div class="col-xs-4">
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+
+                  <div class="form-group status-right">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex.ru">
+                    <small class="form-text text-muted"></small>
+                    <div class="form-control-feedback">
+                      <div class="circle"></div><!-- /.circle -->
+                    </div><!-- /.form-control-feedback -->
+                  </div><!-- /.form-group -->
+
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;div class="form-group status-right"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex.ru"&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />  &lt;div class="form-control-feedback"&gt;<br />    &lt;div class="circle"&gt;&lt;/div&gt;&lt;!-- /.circle --&gt;<br />  &lt;/div&gt;&lt;!-- /.form-control-feedback --&gt;<br />&lt;/div&gt;&lt;!-- /.form-group --&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+              <div class="ui-demo">
+                <div class="ui-demo-element">
+
+                  <div class="form-group form-group--error">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex">
+                    <small class="form-text text-muted"></small>
+                    <div class="bubble bubble-right">
+                      <div class="bubble__text">
+                        <span>Вы указали некорректный email</span>
+                      </div><!-- /.bubble__text -->
+                    </div><!-- /.bubble -->
+                  </div><!-- /.form-group -->
+
+                </div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code">
+
+                  <pre><code class="html">&lt;div class="form-group form-group--error"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex"&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />  &lt;div class="bubble bubble-right"&gt;<br />    &lt;div class="bubble__text"&gt;<br />      &lt;span&gt;Вы указали некорректный email&lt;/span&gt;<br />    &lt;/div&gt;&lt;!-- /.bubble__text --&gt;<br />  &lt;/div&gt;&lt;!-- /.bubble --&gt;<br />&lt;/div&gt;&lt;!-- /.form-group --&gt;</code></pre>
+
+                </div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+
+            </div>
+          </div>
+
+        </div><!-- /.content__box -->
+
+        <div class="content__box content__box-icon">
+          <h2>Иконки и графика</h2>
+          <p>Все svg-иконки расположены в CSS. Работают через тег <code>&lt;i class="ico" aria-hidden=”true”&gt;</code>. Цвета иконок меняются классами цветов: <code>white</code> — белый, <code>gray</code> — серый, <code>green</code> — зелёный, ну и так далее. Исходник файла с иконками расположен в <code>app/styles/base/icons.pcss</code>. Название иконки соответствует названию файла в дирректории <code>app/images/svg/</code>.</p>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-loupe" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-loupe" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-play-in-circle" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-play-in-circle" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-wallet" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-wallet" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-geotag" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-geotag" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-bell" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-bell" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-watch" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-watch" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-book" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-book" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-article" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-article" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-microphone" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-microphone" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-webcam" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-webcam" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-star" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-star" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-send" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-send" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-academic-cap" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-academic-cap" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-edu-sign" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-edu-sign" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-calendar" aria-hidden=”true”></i></div><!-- /.ui-demo-gelement -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-calendar" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-timetable" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-timetable" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-stripe1" aria-hidden=”true”></i><i class="ico ico-stripe2" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-stripe1/2" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-officer" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-officer" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-pencil" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-pencil" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-cross" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-cross" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-check" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-check" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-mail" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-mail" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-question" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-question" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-rub" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-rub" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-like" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-like" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-computer" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-computer" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-phone" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-phone" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-user" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-user" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-tag" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-tag" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-attention" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-attention" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-portfl" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-portfl" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-reload" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-reload" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-eyes" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-eyes" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-eyes-cross" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-eyes-cross" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-door" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-door" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+            <div class="col-xs-3">
+              <div class="ui-demo ui-demo--icon">
+                <div class="ui-demo-element"><i class="ico ico-hashtag" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-hashtag" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+              </div><!-- /.ui-demo -->
+            </div>
+          </div>
+
+        </div>
+
+        <div class="content__box">
+          <h2>Типографика и текстовые элементы</h2>
+
+          <h1>Очень длинный заголовок типовой страницы, чтобы настроить междустрочный интервал (интерлиньяж)</h1>
+          <p class="lead">Лид — это первый абзац статьи, информативный отрывок позволяющий захватить внимание читателя на данном материале. Необязательный элемент.</p>
+          <p>Эта страница создана для демонстрации блоков и элементов, которые используются на сайте, и служит руководством для всех, кто работает над ним. Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. Здесь же рассказывается о некоторых общих правилах оформления контента.</p>
+          <p>Заголовок &lt;h1&gt; на странице должен быть использован только один раз!</p>
+          <h2>Многострочный заголовок &lt;h2&gt;, длина которого иногда бывает так некстати</h2>
+          <p>Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.</p>
+          <h3>&lt;h3&gt; Делаем заголовки нарочито длинными, чтобы убедиться в правильном интерлиньяже</h3>
+          <p>Текст состоит из некоторого количества предложений. Одно предложение, даже очень распространённое, сложное, текстом назвать нельзя, поскольку текст можно расчленить на самостоятельные предложения, а части предложения сочетаются по законам синтаксиса сложного предложения, но не текста. </p>
+          <h4>&lt;h4&gt; В первую очередь нас интересуют интерлиньяж и отступы, но не стоит забывать и про сам заголовок</h4>
+          <p>Заголовок &lt;h4&gt; используется для большой вложенности в сложной структере документов, например, выставленные счета на оплату, отчёты или информация о полученных знаниях и сертификатах, дефферинциированных по подтипам.</p>
+          <h5>Заголовок пятого уровня &lt;h5&gt;</h5>
+          <p>Заголовок &lt;h5&gt; используется только для вспомогательной информации, где есть вероятность появления шестого уровня разбивки.</p>
+          <h6>Низкоуровневый заголовок &lt;h6&gt;</h6>
+          <p>Самый «нижний» заголовок &lt;h6&gt; предваряет такие элементы, как «Комментарий» или «Таблица».</p>
+          <h2>&lt;h2&gt; Теперь покажем несколько двустрочных<br>заголовков подряд</h2>
+          <h3>&lt;h3&gt; Таким образом проверим их сочетание:<br>интерлиньяж и отступы</h3>
+          <h4>&lt;h4&gt; Однако, в реальной ситуации подобных скоплений<br>заголовков лучше избегать</h4>
+          <p>Если за заголовком более низкого уровня сразу следует заголовок более высокого, это нарушает композиционную связность элементов оформления и логику повествования. Поэтому после заголовка должен следовать текст (или иной контент), который этот заголовок и подчиненные ему подзаголовки, если они есть, озаглавливают.</p>
+
+          <h2>Списки</h2>
+          <p>Списки бывают нумерованные и ненумерованые. Принципы их оформления одинаковы.</p>
+          <ul class="list">
+            <li>Если пункты списка длинные и&nbsp;представляют собой развернутые предложения, они должны начинаться с&nbsp;прописной буквы и&nbsp;заканчиваться точкой.
+              <ul class="list">
+                <li>Если пункты списка длинные и&nbsp;представляют собой развернутые предложения, они должны начинаться с&nbsp;прописной буквы и&nbsp;заканчиваться точкой.</li>
+                <li>Если пункты списка короткие, не&nbsp;являются самостоятельной законченной конструкцией и&nbsp;грамматически тесно связаны с&nbsp;предшествующей списку вводной фразой, они должны начинаться со&nbsp;строчной буквы и&nbsp;заканчиваться точкой с&nbsp;запятой (в&nbsp;конце последнего пункта&nbsp;— точка).</li>
+              </ul>
+            </li>
+            <li>Если пункты списка короткие, не&nbsp;являются самостоятельной законченной конструкцией и&nbsp;грамматически тесно связаны с&nbsp;предшествующей списку вводной фразой, они должны начинаться со&nbsp;строчной буквы и&nbsp;заканчиваться точкой с&nbsp;запятой (в&nbsp;конце последнего пункта&nbsp;— точка).</li>
+          </ul>
+          <ol class="list">
+            <li>Если пункты списка длинные и&nbsp;представляют собой развернутые предложения, они должны начинаться с&nbsp;прописной буквы и&nbsp;заканчиваться точкой.</li>
+            <li>Если пункты списка короткие, не&nbsp;являются самостоятельной законченной конструкцией и&nbsp;грамматически тесно связаны с&nbsp;предшествующей списку вводной фразой, они должны начинаться со&nbsp;строчной буквы и&nbsp;заканчиваться точкой с&nbsp;запятой (в&nbsp;конце последнего пункта&nbsp;— точка).</li>
+          </ol>
+          <h3>Короткие пункты</h3>
+          <p>Для использования такого списка необходимо на элемент <code>&lt;ul&gt;</code> добавить класс <code>.list-short</code>.</p>
+          <ul class="list list-short">
+            <li>с небольшими отступами;</li>
+            <li>без маркеров;</li>
+            <li>с цветовым выделением.</li>
+          </ul>
+
+          <h2>Оформление текста</h2>
+          <p>Наиболее простыми способами выделения информации являются <strong>полужирное</strong> и&nbsp;<em>курсивное</em> начертания. Подробнее: <a class="external" href="http://www.artlebedev.ru/kovodstvo/sections/79/" target="_blank">§&nbsp;79. Делать фонт болдом или италиком?</a></p>
+          <p>На&nbsp;этом сайте есть дополнительный способ выделения при помощи подсвечивания, для чего используется элемент <span class="highlighted">«Подсвеченный»</span> (класс <code>.highlighted</code>).</p>
+          <h3>Комментарий</h3>
+          <div class="comment"><p>Элемент «Комментарий» (класс <code>.comment</code>) применяется к&nbsp;пояснительному тексту. <em>И&nbsp;еще немного специально написанного текста, чтобы получилось несколько строк для наглядности.</em></p></div>
+          <div class="important important--red">
+            <div class="important__icon">
+              <span><i class="f-ico i-recommendation red"></i></span>
+            </div>
+            <h3>Важно</h3>
+            <p>Элемент «Важно». (класс <code>.important</code>), который используется для выделения особо важной информации. И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности.</p>
+          </div>
+          <h3>Надстрочные и подстрочные индексы</h3>
+          <p>Важно следить за тем, чтобы элементы надстрочных и подстрочных индексов не увеличивали высоту строки, потому что это портит вид текстового блока. Пример: 2<sup>3</sup>. Еще пример: H<sub>2</sub>SO<sub>4</sub>. В обоих случаях высота строки от индексов не должна меняться. Если отступ между первой и второй строками увеличился, значит, что-то<sup class="footnote">1</sup> сделано неправильно.</p>
+
+          <h2>Ссылки</h2>
+          <p>На сайте может встречаться несколько видов ссылок. Например, ссылка на <a href="https://yandex.ru/" class="external link" target="_blank">Яндекс</a> является внешней. Внутренние ссылки могут открываться по умолчанию в текущем окне (например, переход на <a href="/" class="link">главную страницу</a>) или в <a target="_blank" href="/" class="link">новом окне</a> (например, для показа изображений в оригинальном размере). Подробнее: §&nbsp;171. <a href="https://www.artlebedev.ru/kovodstvo/sections/171/" class="external" target="_blank">Правила оформления ссылок</a>.</p>
+          <p>Стиль <span class="link pseudo">псевдоссылки</span> обеспечивается добавлением к нужному элементу класса <code>.pseudo</code>.</p>
+
+          <h2>Цитата</h2>
+          <blockquote>
+            <p>Я увидел всю сущность нашей правящей системы. Там было много очень послушных дураков и неучей.</p>
+            <footer>— Л. Н. Толстой. <cite title="Из письма к Л. Андрееву от 02.09.1902">Из письма к Л. Андрееву от 02.09.1902</cite></footer>
+          </blockquote>
+        </div>
+
+      </div><!-- /.page__content -->
+    </div><!-- /.page -->
+  </div><!-- /.container -->
+</div><!-- /.ui-page -->
 
     </main>
     <footer class="footer">
