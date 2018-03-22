@@ -188,9 +188,17 @@
 
           <h2>Компоненты и элементы</h2>
 
+          <p>Вёрстка устроена этажами. Отдельный этаж — отдельный блок и директория в проекте. Связанные логически этажи (все для личного кабинета, например), лежат в одной родительской директории.</p>
+
+          <h2>Сетка</h2>
+
+          <p>Для сетки использую <a href="http://flexboxgrid.com/" target="_blank">Flexbox Grid</a>, она клёвая.</p>
+
           <h3>Кнопки</h3>
 
           <p>Кнопки включаются через класс <code>.btn</code>, который может быть применёнк любому элементу, но лучше всего использовать <code>&lt;a&gt;</code> или <code>&lt;button&gt;</code>, . В кнопку можно превратить ссылку, обычную кнопку и инпут (ну и на самом деле вообще всё). У кнопок существуют разные модификации. Прмеры — ниже. <em>Вторая кнопка слева она специально такая, это — кнопка для тёмного фона.</em></p>
+
+          <p>Не отрисованы состояния кнопок в прогрессе. Обработка данных, например.</p>
 
           <div class="row">
 
@@ -311,67 +319,19 @@
 
           <h3>Поля и элементы форм</h3>
 
-          <h3>Таблицы</h3>
+          <p>Отдельные элементы форм кладутся в блок-родитель с классом <code>.form-group</code>. Внутри формы работает стандратная сетка. Страндартный класс для поля любого типа — <code>.form-control</code>. Для полей ошибок используется класс <code>.has-error</code> у родительского элемента <code>.form-group</code>.</p>
+
+          <p>Состояние «ок» и «прогресс» для полей форм не отрисованы. Также не отрисованы выпадающие списки, множественный выбор, чекбоксы и радиобатоны.</p>
+
+          <p>Примеры полей:</p>
 
           <div class="row">
+
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <label class="switch">
-                    <input type="checkbox" class="switch__control" checked disabled>
-                    <span class="switch__slider"></span>
-                    <span class="switch__text">Семинары</span>
-                  </label>
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot; checked&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <label class="switch">
-                    <input type="checkbox" class="switch__control" checked>
-                    <span class="switch__slider"></span>
-                    <span class="switch__text">Семинары</span>
-                  </label>
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot; checked disabled&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <div class="form-check">
-                    <input type="checkbox" name="uiblock" id="ui1" disabled>
-                    <label for="ui1">
-                      <span class="form-check-control">Семинары</span>
-                    </label>
-                  </div><!-- /.form-check -->
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui1" disabled&gt;<br />  &lt;label for="ui1"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <div class="form-check">
-                    <input type="checkbox" name="uiblock" id="ui2">
-                    <label for="ui2">
-                      <span class="form-check-control">Семинары</span>
-                    </label>
-                  </div><!-- /.form-check -->
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui2"&gt;<br />  &lt;label for="ui2"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><div class="form-group"><label for="" class="form-control-label hide" hide="">Email</label><input type="text" id="" class="form-control" placeholder="Email"></div></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;div class="form-group"&gt;<br /> &lt;label for="" class="form-control-label hide" hide=""&gt;Email&lt;/label&gt;<br /> &lt;input type="text" id="" class="form-control" placeholder="Email" autofocus=""&gt;<br /> &lt;/div&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
@@ -379,164 +339,32 @@
             <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <label class="switch">
-                    <input type="checkbox" class="switch__control" disabled>
-                    <span class="switch__slider"></span>
-                    <span class="switch__text">Семинары</span>
-                  </label>
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot; disabled&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <label class="switch">
-                    <input type="checkbox" class="switch__control">
-                    <span class="switch__slider"></span>
-                    <span class="switch__text">Семинары</span>
-                  </label>
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-                  <pre><code class="html">&lt;label class=&quot;switch&quot;&gt;<br />&nbsp; &lt;input type=&quot;checkbox&quot; class=&quot;switch__control&quot;&gt;<br />&nbsp; &lt;span class=&quot;switch__slider&quot;&gt;&lt;/span&gt;<br />&nbsp; &lt;span class=&quot;switch__text&quot;&gt;Семинары&lt;/span&gt;<br />&lt;/label&gt;</code></pre>
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <div class="form-check">
-                    <input type="checkbox" name="uiblock" id="ui3" disabled checked>
-                    <label for="ui3">
-                      <span class="form-check-control">Семинары</span>
-                    </label>
-                  </div><!-- /.form-check -->
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui3" disabled checked&gt;<br />  &lt;label for="ui3"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <div class="form-check">
-                    <input type="checkbox" name="uiblock" id="ui4" checked>
-                    <label for="ui4">
-                      <span class="form-check-control">Семинары</span>
-                    </label>
-                  </div><!-- /.form-check -->
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;div class="form-check"&gt;<br />  &lt;input type="checkbox" name="uiblock" id="ui4" checked&gt;<br />  &lt;label for="ui4"&gt;<br />    &lt;span class="form-check-control"&gt;Семинары&lt;/span&gt;<br />  &lt;/label&gt;<br />&lt;/div&gt;&lt;!-- /.form-check --&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><div class="form-group"><label for="" class="form-control-label hide" hide="">Email</label><input type="text" id="" class="form-control focus" placeholder="Email"></div></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;div class="form-group"&gt;<br /> &lt;label for="" class="form-control-label hide" hide=""&gt;Email&lt;/label&gt;<br /> &lt;input type="text" id="" class="form-control focus" placeholder="Email" autofocus=""&gt;<br /> &lt;/div&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
-            <div class="col-xs-2">
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <a href="#" class="more-link"><span>Показать ответ</span></a>
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
 
-                  <pre><code class="html">&lt;a href=&quot;#&quot; class=&quot;more-link&quot;&gt;&lt;span&gt;Показать ответ&lt;/span&gt;&lt;/a&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
+            <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element">
-
-                  <div class="loading">
-                    <div class="loading__icon">
-                      <div class="spinner">
-                        <svg viewBox="0 0 64 64"><g><defs><linearGradient id="sGD" gradientUnits="userSpaceOnUse" x1="55" y1="46" x2="2" y2="46"><stop offset="0.1" class="stop1"></stop><stop offset="1" class="stop2" fill="red"></stop></linearGradient></defs><g stroke-width="4" stroke-linecap="round" fill="none" transform="rotate(134.304 32 32)"><path stroke="url(#sGD)" d="M4,32 c0,15,12,28,28,28c8,0,16-4,21-9"></path><path d="M60,32 C60,16,47.464,4,32,4S4,16,4,32"></path><animateTransform values="0,32,32;360,32,32" attributeName="transform" type="rotate" repeatCount="indefinite" dur="750ms"></animateTransform></g></g></svg>
-                      </div><!-- /.spinner -->
-                    </div><!-- /.loading__icon -->
-                    <div class="loading__text">Загрузка...</div><!-- /.loading__text -->
-                  </div><!-- /.loading -->
-
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre style="width: 188px;"><code class="html">&lt;div class="loading"&gt;<br />  &lt;div class="loading__icon"&gt;<br />    &lt;div class="spinner"&gt;<br />      &lt;svg viewBox="0 0 64 64"&gt;&lt;g&gt;&lt;defs&gt;&lt;linearGradient id="sGD" gradientUnits="userSpaceOnUse" x1="55" y1="46" x2="2" y2="46"&gt;&lt;stop offset="0.1" class="stop1"&gt;&lt;/stop&gt;&lt;stop offset="1" class="stop2" fill="red"&gt;&lt;/stop&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;g stroke-width="4" stroke-linecap="round" fill="none" transform="rotate(134.304 32 32)"&gt;&lt;path stroke="url(#sGD)" d="M4,32 c0,15,12,28,28,28c8,0,16-4,21-9"&gt;&lt;/path&gt;&lt;path d="M60,32 C60,16,47.464,4,32,4S4,16,4,32"&gt;&lt;/path&gt;&lt;animateTransform values="0,32,32;360,32,32" attributeName="transform" type="rotate" repeatCount="indefinite" dur="750ms"&gt;&lt;/animateTransform&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;<br />    &lt;/div&gt;&lt;!-- /.spinner --&gt;<br />  &lt;/div&gt;&lt;!-- /.loading__icon --&gt;<br />  &lt;div class="loading__text"&gt;Загрузка...&lt;/div&gt;&lt;!-- /.loading__text --&gt;<br />&lt;/div&gt;&lt;!-- /.loading --&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-
-                  <div class="circle"></div>
-
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;div class="circle"&gt;&lt;/div&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
-
-              <div class="ui-demo">
-                <div class="ui-demo-element">
-                  <a href="#" class="more-link more-link--right"><span>Показать полностью</span></a>
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;a href="#" class="more-link more-link--right"&gt;&lt;span&gt;Показать полностью&lt;/span&gt;&lt;/a&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><div class="form-group has-error"><label for="" class="form-control-label hide">Имя</label><input type="text" id="" class="form-control" placeholder="Имя"><div class="invalid-feedback">Таких имён не баывает, заполните поле</div></div></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;div class="form-group has-error"&gt;<br /> &lt;label for="" class="form-control-label hide"&gt;Имя&lt;/label&gt;<br /> &lt;input type="text" id="" class="form-control" placeholder="Имя"&gt;<br /> &lt;div class="invalid-feedback"&gt;Таких имён не баывает, заполните поле&lt;/div&gt;<br /> &lt;/div&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
-            <div class="col-xs-4">
-              <div class="ui-demo">
-                <div class="ui-demo-element">
 
-                  <div class="form-group status-right">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex.ru">
-                    <small class="form-text text-muted"></small>
-                    <div class="form-control-feedback">
-                      <div class="circle"></div><!-- /.circle -->
-                    </div><!-- /.form-control-feedback -->
-                  </div><!-- /.form-group -->
-
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;div class="form-group status-right"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex.ru"&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />  &lt;div class="form-control-feedback"&gt;<br />    &lt;div class="circle"&gt;&lt;/div&gt;&lt;!-- /.circle --&gt;<br />  &lt;/div&gt;&lt;!-- /.form-control-feedback --&gt;<br />&lt;/div&gt;&lt;!-- /.form-group --&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
-              </div><!-- /.ui-demo -->
+            <div class="col-xs-3">
 
               <div class="ui-demo">
-                <div class="ui-demo-element">
-
-                  <div class="form-group form-group--error">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex">
-                    <small class="form-text text-muted"></small>
-                    <div class="bubble bubble-right">
-                      <div class="bubble__text">
-                        <span>Вы указали некорректный email</span>
-                      </div><!-- /.bubble__text -->
-                    </div><!-- /.bubble -->
-                  </div><!-- /.form-group -->
-
-                </div><!-- /.ui-demo-element -->
-                <div class="ui-demo-code">
-
-                  <pre><code class="html">&lt;div class="form-group form-group--error"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" value="moof37@yandex"&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />  &lt;div class="bubble bubble-right"&gt;<br />    &lt;div class="bubble__text"&gt;<br />      &lt;span&gt;Вы указали некорректный email&lt;/span&gt;<br />    &lt;/div&gt;&lt;!-- /.bubble__text --&gt;<br />  &lt;/div&gt;&lt;!-- /.bubble --&gt;<br />&lt;/div&gt;&lt;!-- /.form-group --&gt;</code></pre>
-
-                </div><!-- /.ui-demo-code -->
+                <div class="ui-demo-element"><div class="form-group"><label for="" class="form-control-label hide" hide="">Email</label><input type="text" id="" class="form-control" placeholder="Email" disabled></div></div><!-- /.ui-demo-element -->
+                <div class="ui-demo-code"><pre><code class="html">&lt;div class="form-group"&gt;<br /> &lt;label for="" class="form-control-label hide" hide=""&gt;Email&lt;/label&gt;<br /> &lt;input type="text" id="" class="form-control" placeholder="Email" autofocus="" disabled&gt;<br /> &lt;/div&gt;</code></pre></div><!-- /.ui-demo-code -->
               </div><!-- /.ui-demo -->
 
             </div>
           </div>
+
+          <h3>Таблицы</h3>
 
         </div><!-- /.content__box -->
 
