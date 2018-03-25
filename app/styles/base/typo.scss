@@ -115,3 +115,142 @@ code {
 .text-red { color: #721c24; }
 
 .text-blue { color: #004085; }
+
+.comment p {
+  padding: 0;
+  color: #445365;
+  font-style: italic;
+}
+
+
+.important {
+  border-top: 3px solid #ccc;
+  position: relative;
+  padding: 5px 0 0 40px;
+  margin: 10px 0;
+  overflow: hidden;
+
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+  }
+
+  p { margin-top: 1px; }
+
+  &_icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 29px;
+    height: 40px;
+  }
+
+  &--red {
+    border-top-color: #ba1a0e;
+
+    h2,
+    h3,
+    h4 {
+      color: #ba1a0e;
+    }
+  }
+}
+
+p.lead {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #737e8c;
+}
+
+.highlighted {
+  background: #fff9cd;
+  color: #000;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+
+blockquote {
+  display:block;
+  background: #fff;
+  padding: 10px 10px 10px 20px;
+  margin: 0 0 20px;
+  position: relative;
+  font-style: italic;
+  border-left: 4px solid #fff9cd;
+
+  footer {
+    color: rgb(195, 200, 204);
+    font-style: normal;
+    font-size: 12px;
+  }
+}
+
+ol:not([class]) {
+  counter-reset: listcounter;
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    position: relative;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 30px;
+
+    &:before {
+      counter-increment: listcounter;
+      content: counter(listcounter) ". ";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      font-family: 'Roboto';
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 30px;
+    }
+  }
+}
+
+ul:not([class]) {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 30px;
+
+    &:before {
+      content: '\2014\a0\a0';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      color: #262d30;
+      opacity: .8;
+    }
+
+    ul {
+      list-style: none;
+    }
+  }
+}
+
+ul.list-short {
+  list-style-type: none;
+  margin-bottom: 1em;
+  padding-left: 0;
+
+  li {
+    margin: 0.1em 0 0.1em 0em;
+    color: #445365;
+  }
+}
