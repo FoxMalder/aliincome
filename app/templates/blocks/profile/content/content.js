@@ -1,1 +1,1 @@
-var clipboard = new ClipboardJS('.ref-link');
+// var clipboard = new ClipboardJS('.ref-link');

@@ -27,6 +27,5 @@ function AddReadMore() {
 $(function () {
   AddReadMore();
 });
-'use strict';
-
-var clipboard = new ClipboardJS('.ref-link');
+// var clipboard = new ClipboardJS('.ref-link');
+"use strict";
