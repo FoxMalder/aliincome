@@ -33,3 +33,9 @@
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+@keyframes progress-bar-stripes {
+
+  from { background-position: 10px 0; }
+  to { background-position: 0 0; }
+}
