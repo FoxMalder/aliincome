@@ -11,6 +11,8 @@ $(document).ready(function () {
     }
   });
 });
+// var clipboard = new ClipboardJS('.ref-link');
+"use strict";
 "use strict";
 
 function AddReadMore() {
@@ -39,5 +41,3 @@ function AddReadMore() {
 $(function () {
   AddReadMore();
 });
-// var clipboard = new ClipboardJS('.ref-link');
-"use strict";
